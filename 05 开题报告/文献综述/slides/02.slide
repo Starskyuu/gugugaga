@@ -1,0 +1,159 @@
+<Slide style={{ width: 1280, height: 720, padding: 0, background: '#FFFFFF', position: 'relative', fontFamily: 'Microsoft YaHei' }}>
+  {/* ===== 顶部中蓝条 ===== */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 49, background: '#5B9BD5' }} />
+
+  {/* ===== 当前步骤高亮区 ===== */}
+  <Box style={{ position: 'absolute', top: 0, left: 350, width: 231, height: 49, background: '#E2E6ED' }} />
+
+  {/* ===== 标题: 概念构思 ===== */}
+  <Text style={{ position: 'absolute', top: 6, left: 92, fontSize: 37, fontWeight: 'bold', color: '#003399' }}>
+    概念构思
+  </Text>
+
+  {/* ===== 五步流程药丸 ===== */}
+  <Box style={{ position: 'absolute', top: 5, left: 117, width: 115, height: 39, background: '#F2F2F2', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000000' }}>问题识别</Text>
+  </Box>
+  <Box style={{ position: 'absolute', top: 5, left: 350, width: 115, height: 39, background: '#2E75B6', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#FFFFFF' }}>概念构思</Text>
+  </Box>
+  <Box style={{ position: 'absolute', top: 5, left: 582, width: 115, height: 39, background: '#F2F2F2', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000000' }}>文献调研</Text>
+  </Box>
+  <Box style={{ position: 'absolute', top: 5, left: 815, width: 115, height: 39, background: '#F2F2F2', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000000' }}>方案设计</Text>
+  </Box>
+  <Box style={{ position: 'absolute', top: 5, left: 1048, width: 115, height: 39, background: '#F2F2F2', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000000' }}>迭代优化</Text>
+  </Box>
+
+  {/* ===== 卡片：2列 × 3行 —— 当前解决方案的不足 ===== */}
+  {/* ---- 第1行 ---- */}
+  {/* 卡片 01：左列 */}
+  <Box style={{ position: 'absolute', top: 154, left: 86, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>01</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      通信基础设施脆弱
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      基站断电断网 · 卫星电话昂贵且普及率低
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      洪涝灾害中基站光缆损毁、电力中断，受灾家庭无法发出求援，救援力量无法获取精确位置
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 需要：可快速部署的独立通信中继节点
+    </Text>
+  </Box>
+
+  {/* 卡片 02：右列 */}
+  <Box style={{ position: 'absolute', top: 154, left: 703, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>02</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      水陆两栖运力缺失
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      冲锋舟依赖人力 · 无人机载重有限
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      现有水面救援依赖人力驾驶冲锋舟，无人机仅能投送轻量物资，缺乏自主水陆两栖配送能力
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 需要：自主水陆两栖无人配送船
+    </Text>
+  </Box>
+
+  {/* ---- 第2行 ---- */}
+  {/* 卡片 03：左列 */}
+  <Box style={{ position: 'absolute', top: 292, left: 86, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>03</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      求援入口不统一
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      电话占线 · 社交媒体求助淹没 · 老人儿童无法操作
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      灾害中多渠道求助信息碎片化，缺乏统一接入和自动定位的求援终端，弱势群体尤难发出信号
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 需要：一键求援的家庭终端，自动上报位置
+    </Text>
+  </Box>
+
+  {/* 卡片 04：右列 */}
+  <Box style={{ position: 'absolute', top: 292, left: 703, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>04</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      无人系统续航瓶颈
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      无人机返航充电 · 无人船无自主充电能力
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      现有无人系统在灾害现场需频繁返回基地充电，严重浪费救援窗口时间，且缺乏自主对接充电能力
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 需要：现场充换电枢纽，支持自主停靠补能
+    </Text>
+  </Box>
+
+  {/* ---- 第3行 ---- */}
+  {/* 卡片 05：左列 */}
+  <Box style={{ position: 'absolute', top: 429, left: 86, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>05</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      调度缺乏全局视角
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      各救援队独立行动 · 无统一调度平台
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      多支救援力量各自为战，物资配送无全局优化，重复覆盖与空白区域并存，无法追踪每份物资去向
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 需要：中心化调度系统，全域感知与路径优化
+    </Text>
+  </Box>
+
+  {/* 卡片 06：右列 */}
+  <Box style={{ position: 'absolute', top: 429, left: 703, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>06</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      快速部署能力不足
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      现有设备依赖人工架设 · 耗时长 · 无折叠机构
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      通信塔、充电站等基础设施需人工搬运与架设，缺乏可折叠、自展开的机构设计，严重延误黄金救援时间
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 需要：可折叠自展开的中心基站塔
+    </Text>
+  </Box>
+
+  {/* ===== 底部总结条 ===== */}
+  <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 48, background: '#5B9BD5', flexDirection: 'row', alignItems: 'center', paddingLeft: 86 }}>
+    <Text style={{ fontSize: 15, color: '#FFFFFF', fontWeight: 'bold' }}>
+      概念构思：以"中心基站塔"为枢纽，整合通信中继、充换电、船队调度与求援接入，构建水陆两栖应急配送闭环
+    </Text>
+  </Box>
+
+  {/* ===== 右下角标注 ===== */}
+  <Text style={{ position: 'absolute', bottom: 56, right: 50, fontSize: 12, color: '#7F7F7F' }}>
+    水陆两栖应急配送舰队 · 开题报告
+  </Text>
+</Slide>

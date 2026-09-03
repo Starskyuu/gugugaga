@@ -1,0 +1,32 @@
+{
+  "coordinate_unit": "cm",
+  "field": {
+    "width": 60.0,
+    "height": 60.0,
+    "grid_resolution": 1.0,
+    "safety_margin": 2.5,
+    "base_station": [19.0, 22.5, 41.0, 37.5],
+    "obstacles": [[19.0, 22.5, 41.0, 37.5]]
+  },
+  "boats": {
+    "boat_1": {"speed": 8.0, "launch": [15.4, 27.0]},
+    "boat_2": {"speed": 8.0, "launch": [15.4, 33.0]},
+    "boat_3": {"speed": 8.0, "launch": [44.6, 27.0]},
+    "boat_4": {"speed": 8.0, "launch": [44.6, 33.0]}
+  },
+  "vision_input": {
+    "bind_host": "0.0.0.0",
+    "port": 9200
+  },
+  "route_output": {
+    "host": "127.0.0.1",
+    "port": 9300
+  },
+  "planning": {
+    "algorithm": "auto",
+    "exact_target_limit": 12,
+    "maximum_targets": 1000,
+    "rescue_service_s": 1.0
+  },
+  "last_plan_file": "runtime/last_plan.json"
+}

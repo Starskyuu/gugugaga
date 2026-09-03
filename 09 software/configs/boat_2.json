@@ -1,0 +1,15 @@
+{
+  "boat_id": "boat_2",
+  "base_station_host": "192.168.50.10",
+  "base_station_port": 9000,
+  "motor_driver": {"type": "console"},
+  "heartbeat_interval_s": 0.5,
+  "server_timeout_s": 3.0,
+  "reconnect_interval_s": 2.0,
+  "control_hz": 10.0,
+  "pose_max_age_s": 0.5,
+  "waypoint_tolerance_m": 0.12,
+  "rescue_radius_m": 0.18,
+  "heading_gain": 1.2,
+  "cruise_output": 0.45
+}

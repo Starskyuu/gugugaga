@@ -1,0 +1,4 @@
+# Core planning, networking and dry-run mode use only the Python standard library.
+# Install the following only when a Raspberry Pi/PC drives an ESP32 over USB:
+pyserial>=3.5
+

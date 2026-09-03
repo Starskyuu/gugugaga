@@ -1,0 +1,164 @@
+<Slide style={{ width: 1280, height: 720, padding: 0, background: '#FFFFFF', position: 'relative', fontFamily: 'Microsoft YaHei' }}>
+  {/* ===== 顶部中蓝条 (theme accent1: #5B9BD5) ===== */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 49, background: '#5B9BD5' }} />
+
+  {/* ===== 当前步骤高亮区 (E2E6ED 矩形) ===== */}
+  <Box style={{ position: 'absolute', top: 0, left: 524, width: 231, height: 49, background: '#E2E6ED' }} />
+
+  {/* ===== 标题: 文献综述 (#003399 深蓝字坐在中蓝条上) ===== */}
+  <Text style={{ position: 'absolute', top: 6, left: 92, fontSize: 37, fontWeight: 'bold', color: '#003399' }}>
+    文献综述
+  </Text>
+
+  {/* ===== 五步流程药丸 ===== */}
+  {/* 步骤1: 问题识别 */}
+  <Box style={{ position: 'absolute', top: 5, left: 117, width: 115, height: 39, background: '#F2F2F2', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000000' }}>问题识别</Text>
+  </Box>
+  {/* 步骤2: 概念构思 */}
+  <Box style={{ position: 'absolute', top: 5, left: 350, width: 115, height: 39, background: '#F2F2F2', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000000' }}>概念构思</Text>
+  </Box>
+  {/* 步骤3: 文献调研（当前高亮） */}
+  <Box style={{ position: 'absolute', top: 5, left: 582, width: 115, height: 39, background: '#2E75B6', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#FFFFFF' }}>文献调研</Text>
+  </Box>
+  {/* 步骤4: 方案设计 */}
+  <Box style={{ position: 'absolute', top: 5, left: 815, width: 115, height: 39, background: '#F2F2F2', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000000' }}>方案设计</Text>
+  </Box>
+  {/* 步骤5: 迭代优化 */}
+  <Box style={{ position: 'absolute', top: 5, left: 1048, width: 115, height: 39, background: '#F2F2F2', borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000000' }}>迭代优化</Text>
+  </Box>
+
+  {/* ===== 文献卡片：2列 × 3行 ===== */}
+  {/* ---- 第1行 ---- */}
+  {/* 卡片 01：左列 */}
+  <Box style={{ position: 'absolute', top: 154, left: 86, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>01</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      JAXA月球车部署坡道
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      Acta Astronautica · 2017, 138: 454–461
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      伸缩式与折叠式坡道方案权衡，折叠式因机构简单、故障冗余更高被选为任务方案
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 对塔设计的启示：折叠冗余方案，快速架设
+    </Text>
+  </Box>
+
+  {/* 卡片 02：右列 */}
+  <Box style={{ position: 'absolute', top: 154, left: 703, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>02</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      月船3号月球车坡道
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      Acta Astronautica · 2025, 229: 1–12
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      双面板折叠机构经有限元/热真空/振动/月面实投完整验证，防卡滞失效
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 对塔设计的启示：展开机构需完整验证闭环
+    </Text>
+  </Box>
+
+  {/* ---- 第2行 ---- */}
+  {/* 卡片 03：左列 */}
+  <Box style={{ position: 'absolute', top: 292, left: 86, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>03</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      安防机器人自动对接充电
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      IEEE/RSJ IROS · 2005
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      视觉地标+虚拟弹簧+被动柔顺三层容错，100次对接成功率99%
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 对塔设计的启示：感知—控制—机械三层容错设计
+    </Text>
+  </Box>
+
+  {/* 卡片 04：右列 */}
+  <Box style={{ position: 'absolute', top: 292, left: 703, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>04</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      视觉-激光雷达自主对接
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      Applied Sciences · 2023, 13(19): 10675
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      YOLOv7识别充电站+激光雷达七状态机，验证集mAP@0.5达99.4%
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 对塔设计的启示：视觉语义+激光雷达几何互补对接
+    </Text>
+  </Box>
+
+  {/* ---- 第3行 ---- */}
+  {/* 卡片 05：左列 */}
+  <Box style={{ position: 'absolute', top: 429, left: 86, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>05</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      自旋转桨轮两栖机器人
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      IEEE/ASME Trans. Mechatronics · 2023, 28(4)
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      齿轮约束桨叶自转，仅用一套轮系实现陆地行驶+水面推进+越障
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 对塔设计的启示：紧凑机构兼顾水陆运动与越障能力
+    </Text>
+  </Box>
+
+  {/* 卡片 06：右列 */}
+  <Box style={{ position: 'absolute', top: 429, left: 703, width: 566, height: 130, background: '#E2E6ED', borderRadius: 4 }}>
+    <Box style={{ position: 'absolute', top: 27, left: 21, width: 40, height: 40, borderRadius: '50%', background: '#1045C9', justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>06</Text>
+    </Box>
+    <Text style={{ position: 'absolute', top: 15, left: 77, fontSize: 18, fontWeight: 'bold', color: '#1045C9' }}>
+      模块化空地车队系统集成
+    </Text>
+    <Text style={{ position: 'absolute', top: 48, left: 77, fontSize: 13, color: '#7F7F7F' }}>
+      DESIGN Conference · 2018
+    </Text>
+    <Text style={{ position: 'absolute', top: 83, left: 25, width: 530, fontSize: 14, color: '#000000', lineHeight: 1.4 }}>
+      模块化设计需在车队任务演化中评价，UGV自动换电是关键车队级行为
+    </Text>
+    <Text style={{ position: 'absolute', top: 107, left: 25, fontSize: 13, color: '#2E75B6', fontWeight: 'bold' }}>
+      ✓ 对塔设计的启示：模块化调度与自动换电机制
+    </Text>
+  </Box>
+
+  {/* ===== 底部研究空白总结条 ===== */}
+  <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 48, background: '#5B9BD5', flexDirection: 'row', alignItems: 'center', paddingLeft: 86 }}>
+    <Text style={{ fontSize: 15, color: '#FFFFFF', fontWeight: 'bold' }}>
+      研究空白：现有文献在可部署机构、自主对接、两栖移动与系统集成四大领域各有突破，但尚无面向洪涝灾后应急配送场景的"中心基站塔"全系统集成方案
+    </Text>
+  </Box>
+
+  {/* ===== 右下角标注 ===== */}
+  <Text style={{ position: 'absolute', bottom: 56, right: 50, fontSize: 12, color: '#7F7F7F' }}>
+    水陆两栖应急配送舰队 · 开题报告
+  </Text>
+</Slide>

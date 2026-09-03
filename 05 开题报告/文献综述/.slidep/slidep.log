@@ -1,0 +1,38 @@
+=== boot pid=35712 ts=2026-09-01 20:16:47.066 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\slidep-validate.js "F://gugugaga//05 开题报告//文献综述//slides//01.slide" --project "F://gugugaga//05 开题报告//文献综述" ===
+[2026-09-01 20:16:47.065] [INFO ] [pid=35712] [validate] ok slideId=01 status=ready ms=1250
+=== boot pid=41736 ts=2026-09-01 20:17:22.690 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\index.js upsert-dsl "F://gugugaga//05 开题报告//文献综述//文献综述.pptx" --dsl-file "F://gugugaga//05 开题报告//文献综述//slides//01.slide" ===
+[2026-09-01 20:17:22.688] [INFO ] [pid=41736] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-09-01 20:17:22.731] [INFO ] [pid=41736] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_mtimtrws_6ba8ls56"}
+[2026-09-01 20:17:22.734] [INFO ] [pid=41736] [mcp] mcp:slide_get_info ok ms=3
+=== boot pid=37952 ts=2026-09-01 20:28:42.586 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\slidep-validate.js "F://gugugaga//05 开题报告//文献综述//slides//01.slide" --project "F://gugugaga//05 开题报告//文献综述" ===
+[2026-09-01 20:28:42.585] [INFO ] [pid=37952] [validate] ok slideId=01 status=ready ms=990
+=== boot pid=42588 ts=2026-09-01 20:28:45.739 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\index.js upsert-dsl "F://gugugaga//05 开题报告//文献综述//文献综述.pptx" --dsl-file "F://gugugaga//05 开题报告//文献综述//slides//01.slide" --page-index 0 ===
+[2026-09-01 20:28:45.737] [INFO ] [pid=42588] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-09-01 20:28:45.780] [INFO ] [pid=42588] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_mtimtrws_6ba8ls56"}
+[2026-09-01 20:28:45.783] [INFO ] [pid=42588] [mcp] mcp:slide_get_info ok ms=2
+=== boot pid=47764 ts=2026-09-01 20:30:31.853 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\slidep-validate.js "F://gugugaga//05 开题报告//文献综述//slides//01.slide" --project "F://gugugaga//05 开题报告//文献综述" ===
+[2026-09-01 20:30:31.853] [INFO ] [pid=47764] [validate] ok slideId=01 status=ready ms=528
+=== boot pid=31908 ts=2026-09-01 20:30:35.000 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\index.js upsert-dsl "F://gugugaga//05 开题报告//文献综述//文献综述.pptx" --dsl-file "F://gugugaga//05 开题报告//文献综述//slides//01.slide" --page-index 0 ===
+[2026-09-01 20:30:34.999] [INFO ] [pid=31908] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-09-01 20:30:35.041] [INFO ] [pid=31908] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_mtimtrws_6ba8ls56"}
+[2026-09-01 20:30:35.044] [INFO ] [pid=31908] [mcp] mcp:slide_get_info ok ms=2
+=== boot pid=31044 ts=2026-09-01 20:47:03.376 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\slidep-validate.js "F://gugugaga//05 开题报告//文献综述//slides//01.slide" --project "F://gugugaga//05 开题报告//文献综述" ===
+[2026-09-01 20:47:03.376] [INFO ] [pid=31044] [validate] ok slideId=01 status=ready ms=750
+=== boot pid=46096 ts=2026-09-01 20:47:06.738 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\index.js upsert-dsl "F://gugugaga//05 开题报告//文献综述//文献综述.pptx" --dsl-file "F://gugugaga//05 开题报告//文献综述//slides//01.slide" --page-index 0 ===
+[2026-09-01 20:47:06.737] [INFO ] [pid=46096] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-09-01 20:47:06.779] [INFO ] [pid=46096] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_mtinmd6i_f5rdph7w"}
+[2026-09-01 20:47:06.782] [INFO ] [pid=46096] [mcp] mcp:slide_get_info ok ms=3
+=== boot pid=49008 ts=2026-09-01 20:54:14.044 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\slidep-validate.js "F://gugugaga//05 开题报告//文献综述//slides//02.slide" --project "F://gugugaga//05 开题报告//文献综述" ===
+[2026-09-01 20:54:14.043] [INFO ] [pid=49008] [validate] ok slideId=02 status=ready ms=683
+=== boot pid=50040 ts=2026-09-01 20:54:17.336 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\index.js upsert-dsl "F://gugugaga//05 开题报告//文献综述//文献综述.pptx" --dsl-file "F://gugugaga//05 开题报告//文献综述//slides//02.slide" ===
+[2026-09-01 20:54:17.334] [INFO ] [pid=50040] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-09-01 20:54:17.377] [INFO ] [pid=50040] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"sid_mtinmd6i_f5rdph7w"}
+[2026-09-01 20:54:17.380] [INFO ] [pid=50040] [mcp] mcp:slide_get_info ok ms=2
+=== boot pid=42920 ts=2026-09-01 20:54:48.974 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\index.js upsert-dsl "F://gugugaga//05 开题报告//文献综述//开题报告.pptx" --dsl-file "F://gugugaga//05 开题报告//文献综述//slides//01.slide" ===
+[2026-09-01 20:54:48.972] [INFO ] [pid=42920] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-09-01 20:54:49.014] [INFO ] [pid=42920] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"E4903E6F-A705-4DD7-991D-B288D234AD90"}
+[2026-09-01 20:54:49.017] [INFO ] [pid=42920] [mcp] mcp:slide_get_info ok ms=2
+=== boot pid=42032 ts=2026-09-01 20:54:53.065 cwd=F:\gugugaga\05 开题报告\文献综述 argv=C:\Users\Lenovo\.workbuddy\binaries\node\versions\22.22.2-2\node_modules\@tencent\slidep\dist\index.js upsert-dsl "F://gugugaga//05 开题报告//文献综述//开题报告.pptx" --dsl-file "F://gugugaga//05 开题报告//文献综述//slides//02.slide" ===
+[2026-09-01 20:54:53.063] [INFO ] [pid=42032] [server-url] env TENCENT_DOCS_LOCAL_MCP = http://127.0.0.1:39099/mcp
+[2026-09-01 20:54:53.105] [INFO ] [pid=42032] [mcp] mcp:slide_get_info send url=http://127.0.0.1:39099/mcp args={"file_id":"E4903E6F-A705-4DD7-991D-B288D234AD90"}
+[2026-09-01 20:54:53.109] [INFO ] [pid=42032] [mcp] mcp:slide_get_info ok ms=2

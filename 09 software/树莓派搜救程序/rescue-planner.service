@@ -1,0 +1,16 @@
+[Unit]
+Description=Four-boat rescue route planner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=__RUN_USER__
+WorkingDirectory=/opt/rescue-planner
+ExecStart=/usr/bin/python3 /opt/rescue-planner/pi_rescue_service.py --config /etc/rescue-planner/config.json
+Restart=on-failure
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,28 @@
+{
+  "network": {
+    "bind_host": "0.0.0.0",
+    "boat_tcp_port": 9000,
+    "vision_udp_port": 9100
+  },
+  "map": {
+    "width_m": 6.0,
+    "height_m": 4.0,
+    "resolution_m": 0.1,
+    "safety_margin_m": 0.15,
+    "obstacles": [
+      [2.8, 1.4, 3.2, 2.6]
+    ]
+  },
+  "boats": {
+    "boat_1": {"speed_mps": 0.40},
+    "boat_2": {"speed_mps": 0.40},
+    "boat_3": {"speed_mps": 0.40},
+    "boat_4": {"speed_mps": 0.40}
+  },
+  "rescue_service_s": 3.0,
+  "vision_min_confidence": 0.60,
+  "vision_max_age_s": 1.0,
+  "replan_position_change_m": 0.20,
+  "minimum_replan_interval_s": 2.0,
+  "boat_heartbeat_timeout_s": 3.0
+}

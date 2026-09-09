@@ -1,0 +1,22 @@
+{
+  "RescueBoat": {
+    "objects": 195,
+    "units": "meters",
+    "file": "RescueBoat.fbx"
+  },
+  "RescueBase": {
+    "objects": 903,
+    "units": "meters",
+    "file": "RescueBase.fbx"
+  },
+  "RescuePerson_Standing": {
+    "objects": 68,
+    "units": "meters",
+    "file": "RescuePerson_Standing.fbx"
+  },
+  "RescuePerson_Seated": {
+    "objects": 51,
+    "units": "meters",
+    "file": "RescuePerson_Seated.fbx"
+  }
+}

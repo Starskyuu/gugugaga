@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "seconds": 73.81795501708984,
+    "maxPassengers": 6.0,
+    "rescued": 24,
+    "boarded": 24,
+    "unloaded": 24,
+    "boats": [
+        "B1 Complete Mission complete target=0 pos=(0.000, -0.005, 0.260) speed=(0.000, 0.000, -0.001) path=0 onboard=0",
+        "B2 Complete Mission complete target=0 pos=(0.265, -0.004, 0.000) speed=(-0.004, 0.006, 0.000) path=0 onboard=0",
+        "B3 Complete Mission complete target=0 pos=(-0.006, -0.005, -0.267) speed=(0.002, 0.012, -0.008) path=0 onboard=0",
+        "B4 Complete Mission complete target=0 pos=(-0.259, -0.005, 0.004) speed=(-0.001, 0.000, -0.005) path=0 onboard=0"
+    ],
+    "people": []
+}

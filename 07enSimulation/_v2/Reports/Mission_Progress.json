@@ -1,0 +1,15 @@
+{
+    "passed": false,
+    "seconds": 60.01592254638672,
+    "maxPassengers": 6.0,
+    "rescued": 6,
+    "boarded": 24,
+    "unloaded": 6,
+    "boats": [
+        "B1 Unloading Transferring to refuge deck target=0 pos=(-0.002, -0.006, 0.259) speed=(-0.009, 0.001, 0.000) path=0 onboard=5",
+        "B2 Returning Returning to home dock target=0 pos=(0.233, -0.007, 0.308) speed=(0.013, 0.000, -0.053) path=2 onboard=6",
+        "B3 Returning Returning to home dock target=0 pos=(0.219, -0.007, -0.128) speed=(-0.006, 0.000, -0.054) path=2 onboard=6",
+        "B4 Returning Returning to home dock target=0 pos=(-0.177, -0.005, -0.192) speed=(-0.056, 0.000, -0.009) path=2 onboard=1"
+    ],
+    "people": []
+}

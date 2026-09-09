@@ -1,0 +1,47 @@
+"""现场参数集中放在这里，换 IP、阈值和场地尺寸时只改本文件。"""
+
+# 树莓派和两个 ESP32 必须连接同一个 Mate 70 Pro 热点。
+BOAT_IP = "192.168.43.14"
+LIFT_IP = "192.168.43.21"
+DEVICE_HTTP_PORT = 80
+
+# 水位 ESP32 主动连接树莓派的这个 TCP 端口。
+WATER_LISTEN_HOST = "0.0.0.0"
+WATER_PORT = 5000
+WATER_BASELINE_SAMPLES = 5
+WATER_RISE_THRESHOLD = 6000
+WATER_TRIGGER_COUNT = 3
+WATER_ABSOLUTE_THRESHOLD = None  # 若已标定，可填写绝对 ADC 阈值，例如 35000
+
+# 666.py 把检测结果发到这个 UDP 端口，并把最新画面写入 JPEG 文件。
+VISION_HOST = "0.0.0.0"
+VISION_PORT = 9101
+VISION_TIMEOUT_S = 1.2
+VISION_JPEG = "/tmp/rescue_latest.jpg"
+
+# 现场坐标均为毫米；默认场地是 600 mm × 600 mm。
+FIELD_WIDTH_MM = 600.0
+FIELD_HEIGHT_MM = 600.0
+GRID_RESOLUTION_MM = 20.0
+SAFETY_MARGIN_MM = 12.0
+OBSTACLES_MM = []  # 示例：[(250, 200, 350, 400)]
+
+# 小船控制参数。角度约定沿用 666.py：朝上为 0°，顺时针为正。
+BOAT_ID = 0
+WAYPOINT_RADIUS_MM = 28.0
+ARRIVAL_RADIUS_MM = 55.0
+TURN_THRESHOLD_DEG = 24.0
+CONTROL_PERIOD_S = 0.20
+REPLAN_PERIOD_S = 2.0
+TARGET_LOST_TIMEOUT_S = 1.5
+MISSION_TIMEOUT_S = 90.0
+TURN_SIGN = 1  # 若左右转反了改成 -1
+
+# 升降台没有位置反馈，发送上升命令后等待这个时间。
+LIFT_RAISE_WAIT_S = 8.0
+DEVICE_TIMEOUT_S = 0.7
+
+# 网页服务。
+WEB_HOST = "0.0.0.0"
+WEB_PORT = 8080
+

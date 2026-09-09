@@ -1,0 +1,28 @@
+{
+    "passed": true,
+    "allPeopleRescued": true,
+    "massCorrect": true,
+    "resetCorrect": true,
+    "pauseCorrect": true,
+    "manualCorrect": true,
+    "detourCorrect": true,
+    "shallowRejected": true,
+    "seconds": 75.58499908447266,
+    "maxPassengers": 6.0,
+    "rescued": 24,
+    "boardingEvents": 24,
+    "unloadingEvents": 24,
+    "plans": 193,
+    "travel": [
+        2.0435984134674072,
+        2.2891833782196045,
+        2.360837459564209,
+        1.9687200784683228
+    ],
+    "states": [
+        "Complete",
+        "Complete",
+        "Complete",
+        "Complete"
+    ]
+}

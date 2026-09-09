@@ -1,0 +1,157 @@
+{
+    "engine": "Unity 6000.6.0f1 / PhysX / ForceMode.Force",
+    "allPassed": true,
+    "checks": [
+        {
+            "name": "dry_mass_12g",
+            "passed": true,
+            "value": 0.012000000104308128,
+            "limit": 0.012000000104308128
+        },
+        {
+            "name": "hull_dimensions_70x50mm",
+            "passed": true,
+            "value": 0.0,
+            "limit": 0.0
+        },
+        {
+            "name": "import_bow_positive_Z",
+            "passed": true,
+            "value": 0.03500000387430191,
+            "limit": 0.03500000014901161
+        },
+        {
+            "name": "import_starboard_positive_X",
+            "passed": true,
+            "value": 0.02500000037252903,
+            "limit": 0.02500000037252903
+        },
+        {
+            "name": "shaft_positions_match_force_points",
+            "passed": true,
+            "value": 0.0,
+            "limit": 0.0
+        },
+        {
+            "name": "empty_calm_water_equilibrium",
+            "passed": true,
+            "value": 0.004534801002591848,
+            "limit": 0.004568479955196381
+        },
+        {
+            "name": "buoyancy_balances_weight",
+            "passed": true,
+            "value": 0.11771995574235916,
+            "limit": 0.11772000044584274
+        },
+        {
+            "name": "empty_speed_settles",
+            "passed": true,
+            "value": 0.00003236230986658484,
+            "limit": 0.0010000000474974513
+        },
+        {
+            "name": "six_passengers_increase_mass",
+            "passed": true,
+            "value": 0.018000001087784767,
+            "limit": 0.017999999225139618
+        },
+        {
+            "name": "loaded_draft_increases",
+            "passed": true,
+            "value": 0.001968901604413986,
+            "limit": 0.0010000000474974513
+        },
+        {
+            "name": "payload_changes_inertia",
+            "passed": true,
+            "value": 0.0,
+            "limit": 0.0
+        },
+        {
+            "name": "loaded_boat_stable",
+            "passed": true,
+            "value": 0.03956468030810356,
+            "limit": 12.0
+        },
+        {
+            "name": "unload_restores_draft",
+            "passed": true,
+            "value": -4.656612873077393e-10,
+            "limit": 0.00009999999747378752
+        },
+        {
+            "name": "disturbed_boat_recovers",
+            "passed": true,
+            "value": 0.7173702716827393,
+            "limit": 3.0
+        },
+        {
+            "name": "equal_rpm_drives_forward",
+            "passed": true,
+            "value": 0.09291576594114304,
+            "limit": 0.019999999552965164
+        },
+        {
+            "name": "equal_rpm_approximately_straight",
+            "passed": true,
+            "value": 8.364459125331791e-11,
+            "limit": 0.0020000000949949026
+        },
+        {
+            "name": "motor_cut_coasts_to_stop",
+            "passed": true,
+            "value": 0.25078487396240234,
+            "limit": 0.44999998807907104
+        },
+        {
+            "name": "opposite_differential_turns",
+            "passed": true,
+            "value": 0.1428336799144745,
+            "limit": 0.03999999910593033
+        },
+        {
+            "name": "negative_rpm_reverses",
+            "passed": true,
+            "value": -0.08287037163972855,
+            "limit": -0.019999999552965164
+        },
+        {
+            "name": "unpowered_current_drift",
+            "passed": true,
+            "value": 0.019960204139351845,
+            "limit": 0.004999999888241291
+        },
+        {
+            "name": "physx_wall_blocks_hull",
+            "passed": true,
+            "value": 0.03504344820976257,
+            "limit": 0.03999999910593033
+        },
+        {
+            "name": "physx_contact_changes_velocity",
+            "passed": true,
+            "value": -0.00002144121754099615,
+            "limit": 0.004999999888241291
+        },
+        {
+            "name": "half_step_float_agrees_under_0_1mm",
+            "passed": true,
+            "value": 0.00006466498598456383,
+            "limit": 0.00009999999747378752
+        },
+        {
+            "name": "capsize_state_detected",
+            "passed": true,
+            "value": 0.0,
+            "limit": 0.0
+        },
+        {
+            "name": "seabed_prevents_sinking",
+            "passed": true,
+            "value": 0.003647692035883665,
+            "limit": 0.0024999999441206455
+        }
+    ],
+    "scope": "Live engine integration tests at true 70 mm hull scale. Estimated parameters; no CFD or multi-boat scheduling."
+}

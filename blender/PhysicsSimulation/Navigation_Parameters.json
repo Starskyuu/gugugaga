@@ -1,0 +1,28 @@
+{
+ "scope":"Steps 4-5: twin thrust, current, cylindrical obstacles, tank walls and autonomous waypoint control",
+ "units":"SI meters kilograms seconds newtons",
+ "time_step_s":0.0010416666666666667,
+ "buoyancy_grid":[12,18,12],
+ "bake_fps":60,
+ "propeller_diameter_m":0.0086,
+ "propeller_Kt":0.18,
+ "max_rpm":2600,
+ "motor_response_s":0.12,
+ "propulsion_parameters_status":"INITIAL_ESTIMATES_NOT_MEASURED",
+ "contact_restitution":0.05,
+ "contact_friction":0.35,
+ "tank_bounds_m":[[-0.30,0.30],[-0.30,0.30]],
+ "current_m_s":[0.008,0,0],
+ "start_m":[0,-0.21],
+ "goal_m":[0,0.21],
+ "obstacles":[
+  {"name":"Pillar_A","center_m":[-0.015,-0.045],"radius_m":0.033},
+  {"name":"Pillar_B","center_m":[0.11,0.10],"radius_m":0.030},
+  {"name":"Pillar_C","center_m":[-0.14,0.14],"radius_m":0.026}
+ ],
+ "planning_clearance_m":0.065,
+ "cruise_speed_m_s":0.055,
+ "arrival_radius_m":0.016,
+ "duration_s":24.0,
+ "limitations":["No CFD, waves or surface tension", "Contact solver handles vertical cylinders and tank walls with a conservative three-circle boat footprint", "No passenger transfer or multi-boat rescue workflow in steps 4-5", "Recompute trajectories after editing parameters; default playback is a physics bake"]
+}

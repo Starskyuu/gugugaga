@@ -1,0 +1,100 @@
+{
+    "allPassed": true,
+    "checks": [
+        {
+            "name": "station_is_center",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "four_boats_and_24_people",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "unique_person_ids",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "people_spawn_without_obstacle_overlap",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "four_outward_launch_corridors_clear",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "all_people_reserved_once",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "six_reservations_per_boat",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "valid_assignments_stable",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "unavailable_boat_releases_tasks",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "automatic_dispatch_preempts_lower_priority",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "critical_people_prioritized_under_shortage",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "payload_reduces_reservations",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "capsized_boat_unassigned",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "inactive_person_released",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "person_drifts_by_physical_flow",
+            "passed": true,
+            "value": 0.03758722543716431
+        },
+        {
+            "name": "person_remains_afloat",
+            "passed": true,
+            "value": -0.002749999985098839
+        },
+        {
+            "name": "waiting_time_uses_simulation_time",
+            "passed": true,
+            "value": 2.999964952468872
+        },
+        {
+            "name": "all_four_boats_remain_upright",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "shared_clock_has_people_and_fleet",
+            "passed": true,
+            "value": 0.0
+        }
+    ]
+}

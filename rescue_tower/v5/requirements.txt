@@ -1,0 +1,2 @@
+# v2 总控和规划只使用 Python 标准库。
+# 视觉依赖沿用已经实测通过的 ../raspberry_pi/vision/666.py 环境。

@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "model_hull_70_by_50_mm": true,
+    "two_rigged_passengers": true,
+    "four_original_benches_retained": true,
+    "four_fitted_belt_pieces": true,
+    "baked_body_matches_solver_under_1_micron": true,
+    "seated_passengers_follow_boat_under_0_1_mm": true,
+    "passengers_on_shelter_bench": true,
+    "north_gate_closed_after_transfer": true
+  },
+  "all_passed": true,
+  "maximum_body_bake_error_m": 0.0,
+  "maximum_seated_attachment_error_m": 0.0,
+  "scope": "Geometry and animation data consistency. Not general mesh intersection or character contact validation."
+}

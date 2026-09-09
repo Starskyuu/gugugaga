@@ -1,0 +1,11 @@
+{
+    "passed": true,
+    "allFourBoatsBound": true,
+    "guardUnchanged": true,
+    "portRpm": 309.22467041015625,
+    "starboardRpm": 463.8370056152344,
+    "portVertexTravel": 0.007509175688028336,
+    "starboardVertexTravel": 0.008523599244654179,
+    "portRotationChange": 123.32190704345703,
+    "elapsed": 0.06045931577682495
+}

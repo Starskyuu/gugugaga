@@ -1,0 +1,2131 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/a1wwwt",
+    "id": "a1wwwt",
+    "slide": 1,
+    "layoutId": "0c62528f-559e-4a65-885f-7c99d0150b51",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "3cc6043c-c426-44c6-8b52-aa562a334e72",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "0c62528f-559e-4a65-885f-7c99d0150b51",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "3cc6043c-c426-44c6-8b52-aa562a334e72",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "3cc6043c-c426-44c6-8b52-aa562a334e72",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j6x8f29c",
+      "id": "1",
+      "name": "header-rule",
+      "bbox": [
+        72,
+        128,
+        1136,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#3D8DFF",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k76p87qx",
+      "id": "2",
+      "name": "eyebrow",
+      "bbox": [
+        72,
+        46,
+        380,
+        24
+      ],
+      "geometry": "rect",
+      "text": "项目方案梳理",
+      "textPreview": "项目方案梳理",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#3D8DFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "项目方案梳理"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "项目方案梳理",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#3D8DFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "项目方案梳理",
+              "fontSize": 14,
+              "color": "#3D8DFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l8fqhcri",
+      "id": "3",
+      "name": "title",
+      "bbox": [
+        72,
+        70,
+        1040,
+        52
+      ],
+      "geometry": "rect",
+      "text": "GPS + YOLO 轻量目标定位与反馈系统",
+      "textPreview": "GPS + YOLO 轻量目标定位与反馈系统",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GPS + YOLO 轻量目标定位与反馈系统"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GPS + YOLO 轻量目标定位与反馈系统",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GPS + YOLO 轻量目标定位与反馈系统",
+              "fontSize": 38,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6to7ah83",
+      "id": "4",
+      "name": "subtitle",
+      "bbox": [
+        72,
+        142,
+        1110,
+        28
+      ],
+      "geometry": "rect",
+      "text": "从视觉识别与坐标输入，到机械响应、通信与高度计算",
+      "textPreview": "从视觉识别与坐标输入，到机械响应、通信与高度计算",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#667085",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "从视觉识别与坐标输入，到机械响应、通信与高度计算"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "从视觉识别与坐标输入，到机械响应、通信与高度计算",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#667085",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "从视觉识别与坐标输入，到机械响应、通信与高度计算",
+              "fontSize": 18,
+              "color": "#667085",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ux8j298",
+      "id": "5",
+      "name": "research-support",
+      "bbox": [
+        72,
+        255,
+        40,
+        350
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F2F7FF",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 1.25
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8vqpc7qt",
+      "id": "6",
+      "name": "input",
+      "bbox": [
+        128,
+        270,
+        200,
+        114
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EAF4FF",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 1.25
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/twzqlcre",
+      "id": "7",
+      "name": "hub",
+      "bbox": [
+        496,
+        260,
+        232,
+        134
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 1.25
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ux8reh8z",
+      "id": "8",
+      "name": "screen",
+      "bbox": [
+        890,
+        222,
+        220,
+        90
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F7FAFC",
+      "lineColor": "#98A2B3",
+      "lineWidth": 1.25
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vyh8nm9k",
+      "id": "9",
+      "name": "mech",
+      "bbox": [
+        890,
+        354,
+        220,
+        90
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F7FAFC",
+      "lineColor": "#98A2B3",
+      "lineWidth": 1.25
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v6tor65o",
+      "id": "10",
+      "name": "comm",
+      "bbox": [
+        470,
+        523,
+        284,
+        80
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F7FAFC",
+      "lineColor": "#98A2B3",
+      "lineWidth": 1.25
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u5kni1o3",
+      "id": "11",
+      "name": "calc",
+      "bbox": [
+        875,
+        523,
+        290,
+        80
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EEF7FF",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 1.25
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h8b6tgnu",
+      "id": "12",
+      "bbox": [
+        328,
+        327,
+        168,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 2
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g725kb69",
+      "id": "13",
+      "bbox": [
+        728,
+        267,
+        162,
+        60
+      ],
+      "verticalFlip": true,
+      "geometry": "straightConnector1",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 2
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7itonm5s",
+      "id": "14",
+      "bbox": [
+        728,
+        327,
+        162,
+        72
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 2
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6h0ne1o7",
+      "id": "15",
+      "bbox": [
+        612,
+        394,
+        0,
+        129
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 2
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tkb6pwni",
+      "id": "16",
+      "bbox": [
+        754,
+        563,
+        121,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#3D8DFF",
+      "lineWidth": 2
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8j25gr6x",
+      "id": "17",
+      "bbox": [
+        112,
+        327,
+        16,
+        103
+      ],
+      "verticalFlip": true,
+      "geometry": "straightConnector1",
+      "lineColor": "#667085",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/redozq5w",
+      "id": "18",
+      "bbox": [
+        112,
+        327,
+        384,
+        103
+      ],
+      "verticalFlip": true,
+      "geometry": "bentConnector3",
+      "lineColor": "#667085",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qd47qlob",
+      "id": "19",
+      "bbox": [
+        112,
+        399,
+        778,
+        31
+      ],
+      "verticalFlip": true,
+      "geometry": "bentConnector3",
+      "lineColor": "#667085",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/298rip8j",
+      "id": "20",
+      "bbox": [
+        112,
+        430,
+        358,
+        133
+      ],
+      "geometry": "bentConnector3",
+      "lineColor": "#667085",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuh8rup4",
+      "id": "21",
+      "bbox": [
+        112,
+        430,
+        763,
+        133
+      ],
+      "geometry": "bentConnector3",
+      "lineColor": "#667085",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ovq9kzqp",
+      "id": "22",
+      "name": "research-text",
+      "bbox": [
+        76,
+        285,
+        32,
+        218
+      ],
+      "geometry": "rect",
+      "text": "文\n献\n调\n研",
+      "textPreview": "文 | 献 | 调 | 研",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#175CD3",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "文"
+          },
+          {
+            "index": 2,
+            "text": "献"
+          },
+          {
+            "index": 3,
+            "text": "调"
+          },
+          {
+            "index": 4,
+            "text": "研"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "文",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#175CD3",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "文",
+              "fontSize": 21,
+              "color": "#175CD3",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "献",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#175CD3",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "献",
+              "fontSize": 21,
+              "color": "#175CD3",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "调",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#175CD3",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "调",
+              "fontSize": 21,
+              "color": "#175CD3",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "研",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#175CD3",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "研",
+              "fontSize": 21,
+              "color": "#175CD3",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwzqt47a",
+      "id": "23",
+      "name": "research-caption",
+      "bbox": [
+        75,
+        518,
+        34,
+        64
+      ],
+      "geometry": "rect",
+      "text": "理论\n依据",
+      "textPreview": "理论 | 依据",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#667085",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "理"
+          },
+          {
+            "index": 2,
+            "text": "论"
+          },
+          {
+            "index": 3,
+            "text": "依"
+          },
+          {
+            "index": 4,
+            "text": "据"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "理论",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#667085",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "理论",
+              "fontSize": 12,
+              "color": "#667085",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "依据",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#667085",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "依据",
+              "fontSize": 12,
+              "color": "#667085",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ax8rm98v",
+      "id": "24",
+      "name": "input-label",
+      "bbox": [
+        148,
+        286,
+        160,
+        22
+      ],
+      "geometry": "rect",
+      "text": "输入层",
+      "textPreview": "输入层",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#3D8DFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "输入层"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "输入层",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#3D8DFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "输入层",
+              "fontSize": 16,
+              "color": "#3D8DFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byh8vup0",
+      "id": "25",
+      "name": "input-main",
+      "bbox": [
+        144,
+        313,
+        168,
+        28
+      ],
+      "geometry": "rect",
+      "text": "GPS 模块 + YOLO",
+      "textPreview": "GPS 模块 + YOLO",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GPS 模块 +"
+          },
+          {
+            "index": 2,
+            "text": "YOLO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GPS 模块 + YOLO",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GPS 模块 + YOLO",
+              "fontSize": 22,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/czq9ozql",
+      "id": "26",
+      "name": "input-note",
+      "bbox": [
+        145,
+        345,
+        166,
+        24
+      ],
+      "geometry": "rect",
+      "text": "每帧目标识别 / 坐标",
+      "textPreview": "每帧目标识别 / 坐标",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#475467",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "每帧目标识别 / 坐标"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "每帧目标识别 / 坐标",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#475467",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "每帧目标识别 / 坐标",
+              "fontSize": 15,
+              "color": "#475467",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0jax476",
+      "id": "27",
+      "name": "hub-title",
+      "bbox": [
+        520,
+        282,
+        184,
+        30
+      ],
+      "geometry": "rect",
+      "text": "ESP32 协调控制",
+      "textPreview": "ESP32 协调控制",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ESP32 协调控制"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ESP32 协调控制",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ESP32 协调控制",
+              "fontSize": 24,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q1o7a58b",
+      "id": "28",
+      "name": "hub-note",
+      "bbox": [
+        520,
+        323,
+        184,
+        42
+      ],
+      "geometry": "rect",
+      "text": "接收坐标系\n联动 GPIO / 执行单元",
+      "textPreview": "接收坐标系 | 联动 GPIO / 执行单元",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#475467",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "接收坐标系"
+          },
+          {
+            "index": 2,
+            "text": "联动 GPIO / 执行单元"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "接收坐标系",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#475467",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "接收坐标系",
+              "fontSize": 16,
+              "color": "#475467",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "联动 GPIO / 执行单元",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#475467",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "联动 GPIO / 执行单元",
+              "fontSize": 16,
+              "color": "#475467",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r2x8japw",
+      "id": "29",
+      "name": "hub-chip",
+      "bbox": [
+        548,
+        372,
+        130,
+        20
+      ],
+      "geometry": "rect",
+      "text": "控制与转发枢纽",
+      "textPreview": "控制与转发枢纽",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#3D8DFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "控制与转发枢纽"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "控制与转发枢纽",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#3D8DFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "控制与转发枢纽",
+              "fontSize": 13,
+              "color": "#3D8DFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tw3up8re",
+      "id": "30",
+      "name": "display-title",
+      "bbox": [
+        912,
+        238,
+        176,
+        24
+      ],
+      "geometry": "rect",
+      "text": "屏幕显示",
+      "textPreview": "屏幕显示",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "屏幕显示"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "屏幕显示",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "屏幕显示",
+              "fontSize": 22,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8vutw3at",
+      "id": "31",
+      "name": "display-note",
+      "bbox": [
+        912,
+        270,
+        176,
+        20
+      ],
+      "geometry": "rect",
+      "text": "目标状态与坐标",
+      "textPreview": "目标状态与坐标",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#475467",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "目标状态与坐标"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "目标状态与坐标",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#475467",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "目标状态与坐标",
+              "fontSize": 15,
+              "color": "#475467",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ulcny98",
+      "id": "32",
+      "name": "mech-title",
+      "bbox": [
+        912,
+        370,
+        176,
+        24
+      ],
+      "geometry": "rect",
+      "text": "机械结构",
+      "textPreview": "机械结构",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "机械结构"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "机械结构",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "机械结构",
+              "fontSize": 22,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6tcbuts3",
+      "id": "33",
+      "name": "mech-note",
+      "bbox": [
+        912,
+        402,
+        176,
+        20
+      ],
+      "geometry": "rect",
+      "text": "执行机构 → 高塔",
+      "textPreview": "执行机构 → 高塔",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#475467",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "执行机构 → 高塔"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "执行机构 → 高塔",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#475467",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "执行机构 → 高塔",
+              "fontSize": 15,
+              "color": "#475467",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hknutsrq",
+      "id": "34",
+      "name": "comm-title",
+      "bbox": [
+        493,
+        539,
+        238,
+        23
+      ],
+      "geometry": "rect",
+      "text": "通信：ESP32 mini ↔ 树莓派",
+      "textPreview": "通信：ESP32 mini ↔ 树莓派",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "通信：ESP32 mini ↔"
+          },
+          {
+            "index": 2,
+            "text": "树莓派"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "通信：ESP32 mini ↔ 树莓派",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "通信：ESP32 mini ↔ 树莓派",
+              "fontSize": 19,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gzetkna5",
+      "id": "35",
+      "name": "comm-note",
+      "bbox": [
+        515,
+        569,
+        194,
+        19
+      ],
+      "geometry": "rect",
+      "text": "Wi‑Fi 数据交互",
+      "textPreview": "Wi‑Fi 数据交互",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#475467",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Wi‑Fi 数据交互"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Wi‑Fi 数据交互",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#475467",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wi‑Fi 数据交互",
+              "fontSize": 15,
+              "color": "#475467",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vylcri9k",
+      "id": "36",
+      "name": "calc-title",
+      "bbox": [
+        900,
+        539,
+        240,
+        23
+      ],
+      "geometry": "rect",
+      "text": "训练与计算：YOLO + 余弦法",
+      "textPreview": "训练与计算：YOLO + 余弦法",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "训练与计算：YOLO +"
+          },
+          {
+            "index": 2,
+            "text": "余弦法"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "训练与计算：YOLO + 余弦法",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "训练与计算：YOLO + 余弦法",
+              "fontSize": 19,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxcbydsz",
+      "id": "37",
+      "name": "calc-note",
+      "bbox": [
+        900,
+        569,
+        240,
+        19
+      ],
+      "geometry": "rect",
+      "text": "目标小人数据集 → 计算高度",
+      "textPreview": "目标小人数据集 → 计算高度",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#475467",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "目标小人数据集 → 计算高度"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "目标小人数据集 → 计算高度",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#475467",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "目标小人数据集 → 计算高度",
+              "fontSize": 15,
+              "color": "#475467",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xojahor6",
+      "id": "38",
+      "name": "input-header",
+      "bbox": [
+        128,
+        211,
+        250,
+        28
+      ],
+      "geometry": "rect",
+      "text": "01 视觉与定位输入",
+      "textPreview": "01 视觉与定位输入",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "01 视觉与定位输入"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "01 视觉与定位输入",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "01 视觉与定位输入",
+              "fontSize": 18,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 39,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3atojal",
+      "id": "39",
+      "name": "output-header",
+      "bbox": [
+        850,
+        169,
+        280,
+        28
+      ],
+      "geometry": "rect",
+      "text": "03 反馈与执行",
+      "textPreview": "03 反馈与执行",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "03 反馈与执行"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "03 反馈与执行",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "03 反馈与执行",
+              "fontSize": 18,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 40,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0jixwra9",
+      "id": "40",
+      "name": "compute-header",
+      "bbox": [
+        470,
+        482,
+        300,
+        28
+      ],
+      "geometry": "rect",
+      "text": "02 通信、训练与计算",
+      "textPreview": "02 通信、训练与计算",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#101828",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02 通信、训练与计算"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02 通信、训练与计算",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#101828",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "02 通信、训练与计算",
+              "fontSize": 18,
+              "color": "#101828",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 41,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1krepwbu",
+      "id": "41",
+      "name": "support-legend",
+      "bbox": [
+        140,
+        620,
+        350,
+        20
+      ],
+      "geometry": "rect",
+      "text": "虚线表示：文献调研提供理论与方案依据",
+      "textPreview": "虚线表示：文献调研提供理论与方案依据",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#667085",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "虚线表示：文献调研提供理论与方案依据"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "虚线表示：文献调研提供理论与方案依据",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#667085",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "虚线表示：文献调研提供理论与方案依据",
+              "fontSize": 14,
+              "color": "#667085",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 42,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ehgfuhc3",
+      "id": "42",
+      "name": "footer",
+      "bbox": [
+        72,
+        666,
+        480,
+        18
+      ],
+      "geometry": "rect",
+      "text": "方案概览｜可用于项目汇报与系统设计讨论",
+      "textPreview": "方案概览｜可用于项目汇报与系统设计讨论",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#98A2B3",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "方案概览｜可用于项目汇报与系统设计讨论"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "方案概览｜可用于项目汇报与系统设计讨论",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#98A2B3",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "方案概览｜可用于项目汇报与系统设计讨论",
+              "fontSize": 12,
+              "color": "#98A2B3",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 43,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fipwnmto",
+      "id": "43",
+      "name": "footer2",
+      "bbox": [
+        1035,
+        666,
+        173,
+        18
+      ],
+      "geometry": "rect",
+      "text": "GPS · YOLO · ESP32",
+      "textPreview": "GPS · YOLO · ESP32",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#98A2B3",
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GPS · YOLO · ESP32"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GPS · YOLO · ESP32",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#98A2B3",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GPS · YOLO · ESP32",
+              "fontSize": 12,
+              "color": "#98A2B3",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

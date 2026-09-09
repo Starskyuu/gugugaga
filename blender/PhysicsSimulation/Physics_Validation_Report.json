@@ -1,0 +1,32 @@
+{
+  "all_passed": true,
+  "checks": {
+    "positive_definite_inertia": true,
+    "buoyancy_capacity_exceeds_dry_mass": true,
+    "settled_linear_speed_below_0_2_mm_s": true,
+    "settled_angular_speed_below_0_01_rad_s": true,
+    "buoyancy_weight_error_below_1_percent": true,
+    "time_step_position_difference_below_0_1_mm": true,
+    "time_step_angle_difference_below_0_1_deg": true,
+    "drag_slows_30_mm_s_drift_below_5_mm_s": true
+  },
+  "dry_mass_g": 12.0,
+  "weight_N": 0.11772,
+  "center_of_mass_mm": [
+    0.0,
+    -2.7833333333333328,
+    5.3566666666666665
+  ],
+  "upright_draft_mm": 4.568480999397114,
+  "max_displacement_g": 26.206484133333337,
+  "final_buoyancy_N": 0.11771991946214462,
+  "final_speed_mm_s": 0.13707106193280444,
+  "final_roll_pitch_deg": [
+    1.6593860728241053e-15,
+    0.6848206532899046
+  ],
+  "dt_convergence_position_mm": 0.09700890853802029,
+  "dt_convergence_angle_deg": 0.002661338557016914,
+  "final_drift_speed_mm_s": 2.2571759262653255,
+  "assumptions": "Mass, COM, inertia and drag are provisional engineering estimates, not measured calibration. Static calm freshwater; rigid body; no propulsion, waves, CFD or collision response."
+}

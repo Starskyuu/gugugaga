@@ -1,0 +1,28 @@
+智能救援塔 V3（轻量版）
+
+一、需要复制什么
+只需要把“智能救援塔_V3”文件夹复制到树莓派，不需要重新复制模型。
+
+二、建议放置位置
+把本文件夹改名为 v3，并放到原 rescue_tower 目录下面：
+
+rescue_tower/
+├── raspberry_pi/vision/666.py
+└── v3/
+    ├── main.py
+    ├── start.sh
+    ├── core/
+    ├── planning/
+    ├── static/
+    └── firmware/
+
+三、运行
+cd ~/rescue_tower/v3
+chmod +x start.sh
+./start.sh
+
+浏览器打开：http://树莓派IP:8080
+
+四、注意
+如果树莓派上的 666.py 不在 rescue_tower/raspberry_pi/vision/，请修改 start.sh 第一条 python3 命令中的路径。
+config.py 用于修改小船 IP、升降台 IP、水位阈值、场地尺寸和障碍物。

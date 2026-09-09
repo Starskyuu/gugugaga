@@ -1,0 +1,12 @@
+type: yolov8
+name: rescue-person-yolov8-v2
+provider: Ultralytics
+display_name: Rescue Person YOLOv8 V2
+
+model_path: best.onnx
+
+iou_threshold: 0.45
+conf_threshold: 0.10
+
+classes:
+  - person

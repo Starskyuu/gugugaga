@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>智能救援塔 v3</title>
+  <style>
+    :root{color-scheme:dark;--bg:#061417;--card:#0d252b;--line:#24505a;--cyan:#53e2dd;--red:#ff5d62;--muted:#8eaaaf}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#12343d,var(--bg) 55%);font-family:"Microsoft YaHei",sans-serif;color:#edfafa}
+    header{height:70px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}h1{font-size:20px;margin:0}small,.muted{color:var(--muted)}
+    main{max-width:1100px;margin:auto;padding:20px;display:grid;grid-template-columns:1.6fr 1fr;gap:16px}.card{background:rgba(13,37,43,.92);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .video{position:relative;aspect-ratio:4/3;background:#02090b;border-radius:10px;overflow:hidden}.video img{width:100%;height:100%;object-fit:contain}.badge{padding:7px 11px;border-radius:20px;background:#173a42;color:var(--muted)}.badge.ok{color:#8fffb3}
+    .title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.title h2{font-size:16px;margin:0}.mission{padding:14px;border-left:3px solid var(--cyan);background:#102f36;margin-bottom:12px}.mission strong{font-size:18px}.mission p{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.metric{background:#102d34;padding:12px;border-radius:9px}.metric span{display:block;color:var(--muted);font-size:12px}.metric b{display:block;margin-top:6px;font-size:17px}
+    button{border:1px solid #36717e;background:#153b44;color:#eaffff;border-radius:9px;padding:11px 12px;cursor:pointer;font-weight:600}button:hover{background:#20515c}.danger{background:#a9343a;border-color:#dc565d}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.actions .wide{grid-column:1/-1}
+    .dpad{display:grid;grid-template-columns:repeat(3,70px);grid-template-rows:repeat(3,55px);justify-content:center;gap:6px;margin-top:12px}.dpad button{touch-action:none}.f{grid-column:2}.l{grid-row:2;grid-column:1}.s{grid-row:2;grid-column:2}.r{grid-row:2;grid-column:3}.b{grid-row:3;grid-column:2}
+    .log{height:116px;overflow:auto;font-size:12px;color:var(--muted);line-height:1.7}.log div{border-bottom:1px solid #173b43}.full{grid-column:1/-1}
+    @media(max-width:760px){main{grid-template-columns:1fr;padding:10px}.full{grid-column:auto}header{padding:0 12px}}
+  </style>
+</head>
+<body>
+<header><div><h1>城市方舟 · 智能救援塔</h1><small>树莓派轻量控制台 v3</small></div><span id="online" class="badge">连接中</span></header>
+<main>
+  <section class="card"><div class="title"><h2>实时画面</h2><small id="visionAge">视觉 --</small></div><div class="video"><img src="/video" alt="摄像头画面"></div></section>
+  <aside class="card">
+    <div id="mission" class="mission"><strong>正在读取状态</strong><p>请稍候</p></div>
+    <div class="grid">
+      <div class="metric"><span>水位 ADC</span><b id="water">--</b></div><div class="metric"><span>水位变化</span><b id="rise">--</b></div>
+      <div class="metric"><span>检测结果</span><b id="targets">--</b></div><div class="metric"><span>船指令</span><b id="command">S</b></div>
+      <div class="metric"><span>升降台</span><b id="lift">--</b></div><div class="metric"><span>当前目标</span><b id="target">--</b></div>
+    </div>
+    <div class="actions"><button onclick="post('/api/mission/start')">开始自动任务</button><button onclick="post('/api/mission/test')">跳过水位测试</button><button onclick="post('/api/mission/reset')">系统复位</button><button class="danger" onclick="post('/api/estop')">紧急停车</button></div>
+  </aside>
+  <section class="card full"><div class="title"><h2>手动调试</h2><small>按住移动，松手停车</small></div>
+    <div class="dpad"><button class="f" data-cmd="F">前进</button><button class="l" data-cmd="L">左转</button><button class="s danger" onclick="drive('S')">停止</button><button class="r" data-cmd="R">右转</button><button class="b" data-cmd="B">后退</button></div>
+    <div id="log" class="log"></div>
+  </section>
+</main>
+<script>
+  const $=id=>document.getElementById(id); let timer=null;
+  function note(text){$('log').innerHTML=`<div>${new Date().toLocaleTimeString()}　${text}</div>`+$('log').innerHTML}
+  async function post(path){try{const r=await fetch(path,{method:'POST'});const d=await r.json();note(`${path}：${d.ok?'成功':'未执行'}`)}catch(e){note(`请求失败：${e}`)}}
+  async function drive(cmd){try{await fetch('/'+cmd);$('command').textContent=cmd}catch(e){note('小船连接失败')}}
+  document.querySelectorAll('[data-cmd]').forEach(btn=>{const start=e=>{e.preventDefault();const c=btn.dataset.cmd;drive(c);clearInterval(timer);timer=setInterval(()=>drive(c),200)};const stop=e=>{e.preventDefault();clearInterval(timer);drive('S')};btn.addEventListener('pointerdown',start);btn.addEventListener('pointerup',stop);btn.addEventListener('pointercancel',stop)});
+  async function refresh(){try{const s=await(await fetch('/api/status',{cache:'no-store'})).json();$('online').textContent='系统在线';$('online').className='badge ok';$('visionAge').textContent=s.age_ms==null?'视觉离线':`视觉 ${s.age_ms} ms`;$('mission').innerHTML=`<strong>${s.mission.stage_cn}</strong><p>${s.mission.message}</p>`;$('water').textContent=s.water.value??'--';$('rise').textContent=s.water.rise==null?'--':Math.round(s.water.rise);$('targets').textContent=`${s.boats.length} 船 / ${s.persons.length} 人`;$('command').textContent=s.control.command;$('lift').textContent=s.lift.command;$('target').textContent=s.mission.target_id??'--'}catch(e){$('online').textContent='连接中断';$('online').className='badge'}}
+  refresh();setInterval(refresh,500);addEventListener('blur',()=>drive('S'));document.addEventListener('visibilitychange',()=>{if(document.hidden)drive('S')});
+</script>
+</body></html>

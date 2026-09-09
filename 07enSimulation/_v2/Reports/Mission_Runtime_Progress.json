@@ -1,0 +1,23 @@
+{
+    "passed": false,
+    "allPeopleRescued": false,
+    "massCorrect": false,
+    "resetCorrect": false,
+    "pauseCorrect": false,
+    "manualCorrect": false,
+    "detourCorrect": false,
+    "shallowRejected": false,
+    "seconds": 75.58499908447266,
+    "maxPassengers": 0.0,
+    "rescued": 24,
+    "boardingEvents": 24,
+    "unloadingEvents": 0,
+    "plans": 0,
+    "travel": [],
+    "states": [
+        "Complete Mission complete target=0 onboard=0",
+        "Complete Mission complete target=0 onboard=0",
+        "Complete Mission complete target=0 onboard=0",
+        "Complete Mission complete target=0 onboard=0"
+    ]
+}

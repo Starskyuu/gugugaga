@@ -1,0 +1,20 @@
+{
+  "schema": "single_boat_rescue_mission_v1",
+  "units": "SI meters kilograms seconds",
+  "bay_center_m": [0.0, 0.0935],
+  "pickup_center_m": [0.0, 0.38],
+  "cruise_speed_m_s": 0.04,
+  "arrival_position_tolerance_m": 0.001,
+  "arrival_speed_tolerance_m_s": 0.0015,
+  "door_open_duration_s": 3.0,
+  "boarding_duration_s": 10.0,
+  "disembark_duration_s": 10.0,
+  "transfer_duration_s": 34.0,
+  "passengers": [
+    {"id": "Passenger_01", "mass_kg": 0.001, "position_m": [-0.015, 0.0175, 0.021], "dimensions_m": [0.008, 0.009, 0.018], "seat_origin_m": [-0.015, 0.0155, 0.00735], "board_offset_s": 4.0, "unload_offset_s": 4.0},
+    {"id": "Passenger_02", "mass_kg": 0.001, "position_m": [0.015, 0.0175, 0.021], "dimensions_m": [0.008, 0.009, 0.018], "seat_origin_m": [0.015, 0.0155, 0.00735], "board_offset_s": 8.0, "unload_offset_s": 8.0}
+  ],
+  "wet_dock_floor_top_m": -0.012,
+  "water_current_m_s": [0.0, 0.0, 0.0],
+  "limits": "One boat, two estimated 1 g figurines. Calm water. Reverse return along the clear north-bay lane. Kinematic people and docking constraints, not a ragdoll or pedestrian contact simulation. No multi-boat dispatch or base lift."
+}

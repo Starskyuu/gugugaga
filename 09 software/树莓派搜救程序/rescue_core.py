@@ -90,10 +90,37 @@ class GridMap:
         col, row = cell
         return 0 <= col < self.cols and 0 <= row < self.rows and cell not in self.blocked
 
+    def nearest_free_cell(self, cell: tuple[int, int]) -> tuple[int, int]:
+        """Return the closest traversable grid cell to a rounded endpoint."""
+        if self.is_free(cell):
+            return cell
+        for radius in range(1, max(self.cols, self.rows)):
+            candidates: list[tuple[int, int]] = []
+            for col in range(cell[0] - radius, cell[0] + radius + 1):
+                candidates.append((col, cell[1] - radius))
+                candidates.append((col, cell[1] + radius))
+            for row in range(cell[1] - radius + 1, cell[1] + radius):
+                candidates.append((cell[0] - radius, row))
+                candidates.append((cell[0] + radius, row))
+            free = [candidate for candidate in candidates if self.is_free(candidate)]
+            if free:
+                return min(
+                    free,
+                    key=lambda candidate: (
+                        (candidate[0] - cell[0]) ** 2 + (candidate[1] - cell[1]) ** 2,
+                        candidate[1],
+                        candidate[0],
+                    ),
+                )
+        raise ValueError("No free grid cell exists near the route endpoint")
+
     def astar(self, start: Point, goal: Point) -> tuple[list[Point], float]:
-        start_cell, goal_cell = self.to_cell(start), self.to_cell(goal)
-        if not self.is_free(start_cell) or not self.is_free(goal_cell):
-            raise ValueError("A* start or goal lies in an obstacle/safety zone")
+        # A geometrically valid point just outside an obstacle can round into the
+        # obstacle's outermost 1 cm grid cell. Snap only that discrete endpoint
+        # to its nearest free cell; the returned path still starts/ends at the
+        # original measured coordinates.
+        start_cell = self.nearest_free_cell(self.to_cell(start))
+        goal_cell = self.nearest_free_cell(self.to_cell(goal))
         if start_cell == goal_cell:
             return [start, goal], hypot(goal.x - start.x, goal.y - start.y)
 
@@ -286,4 +313,3 @@ class RescuePlanner:
 
 def point_to_dict(point: Point) -> dict[str, float]:
     return {"x": round(point.x, 4), "y": round(point.y, 4)}
-

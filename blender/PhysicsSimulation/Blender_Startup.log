@@ -1,0 +1,21 @@
+07:58.453  reports          | WARNING 路径 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' 不能成为 Material 'Dots Stroke' 的相对路径
+07:58.453  reports          | WARNING 路径 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' 不能成为 Material 'Material' 的相对路径
+信息: 已另存为 "05_Propulsion_And_Navigation.blend"
+08:26.922  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Navigation.png'
+08:34.984  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Propulsion.png'
+10:38.250  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Collision_Response.png'
+11:22.016  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Collision_Response.png'
+信息: 已另存为 "05_Propulsion_And_Navigation.blend"
+信息: 已另存为 "06_Rescue_Mission.blend"
+01:17:08.297  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Rescue_Mission_Overview.png'
+01:17:32.078  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Rescue_Mission_Boarding.png'
+01:18:02.281  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Rescue_Mission_Transfer.png'
+01:18:49.000  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Rescue_Mission_Complete.png'
+信息: 已另存为 "06_Rescue_Mission.blend"
+01:23:03.406  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Rescue_Mission_Complete.png'
+01:23:27.484  render           | Saved: 'C:\Users\Lenovo\AppData\Local\Temp\blender_a41124\blender_mcp\Preview_Rescue_Mission_Boarding.png'
+01:42:20.328  blend            | Saved session recovery to "C:\Users\Lenovo\AppData\Local\Temp\quit.blend"
+01:42:20.344  blend            | Writing user preferences: "C:\Users\Lenovo\AppData\Roaming\Blender Foundation\Blender\5.2\config\userpref.blend" 
+01:42:20.344  reports          | 已保存偏好设置
+
+Blender quit

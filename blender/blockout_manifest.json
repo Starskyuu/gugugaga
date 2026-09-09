@@ -1,0 +1,19 @@
+{
+  "stage": "GameAsset_V2",
+  "units": "meters",
+  "overall_envelope_m": [
+    1.2,
+    1.2,
+    1.2
+  ],
+  "materials": 11,
+  "lights": 0,
+  "assemblies": {
+    "BaseStation": "BaseStation_Blockout.fbx",
+    "RaspberryPi": "RaspberryPi_Blockout.fbx",
+    "OverheadCamera": "OverheadCamera_Blockout.fbx",
+    "RescueBoat": "RescueBoat_Blockout.fbx",
+    "Person": "Person_Blockout.fbx"
+  },
+  "notes": "Second-stage real-time game asset. PBR material zones, baked bevels and named independent assemblies."
+}

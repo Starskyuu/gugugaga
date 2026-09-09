@@ -1,0 +1,48 @@
+{"kind":"deck","id":"pr/uatgeb","name":"Deck"}
+{"kind":"layout","layoutId":"3cc6043c-c426-44c6-8b52-aa562a334e72","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"0c62528f-559e-4a65-885f-7c99d0150b51","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/a1wwwt","slide":1,"title":"项目方案梳理","textShapes":25}
+{"kind":"shape","id":"sh/j6x8f29c","slide":1,"name":"header-rule","bbox":[72,128,1136,2]}
+{"kind":"textbox","id":"sh/k76p87qx","slide":1,"name":"eyebrow","text":"项目方案梳理","textPreview":"项目方案梳理","textChars":6,"textLines":1,"bbox":[72,46,380,24]}
+{"kind":"textbox","id":"sh/l8fqhcri","slide":1,"name":"title","text":"GPS + YOLO 轻量目标定位与反馈系统","textPreview":"GPS + YOLO 轻量目标定位与反馈系统","textChars":22,"textLines":1,"bbox":[72,70,1040,52]}
+{"kind":"textbox","id":"sh/6to7ah83","slide":1,"name":"subtitle","text":"从视觉识别与坐标输入，到机械响应、通信与高度计算","textPreview":"从视觉识别与坐标输入，到机械响应、通信与高度计算","textChars":24,"textLines":1,"bbox":[72,142,1110,28]}
+{"kind":"shape","id":"sh/7ux8j298","slide":1,"name":"research-support","bbox":[72,255,40,350]}
+{"kind":"shape","id":"sh/8vqpc7qt","slide":1,"name":"input","bbox":[128,270,200,114]}
+{"kind":"shape","id":"sh/twzqlcre","slide":1,"name":"hub","bbox":[496,260,232,134]}
+{"kind":"shape","id":"sh/ux8reh8z","slide":1,"name":"screen","bbox":[890,222,220,90]}
+{"kind":"shape","id":"sh/vyh8nm9k","slide":1,"name":"mech","bbox":[890,354,220,90]}
+{"kind":"shape","id":"sh/v6tor65o","slide":1,"name":"comm","bbox":[470,523,284,80]}
+{"kind":"shape","id":"sh/u5kni1o3","slide":1,"name":"calc","bbox":[875,523,290,80]}
+{"kind":"shape","id":"sh/h8b6tgnu","slide":1,"bbox":[328,327,168,0]}
+{"kind":"shape","id":"sh/g725kb69","slide":1,"bbox":[728,267,162,60]}
+{"kind":"shape","id":"sh/7itonm5s","slide":1,"bbox":[728,327,162,72]}
+{"kind":"shape","id":"sh/6h0ne1o7","slide":1,"bbox":[612,394,0,129]}
+{"kind":"shape","id":"sh/tkb6pwni","slide":1,"bbox":[754,563,121,0]}
+{"kind":"shape","id":"sh/8j25gr6x","slide":1,"bbox":[112,327,16,103]}
+{"kind":"shape","id":"sh/redozq5w","slide":1,"bbox":[112,327,384,103]}
+{"kind":"shape","id":"sh/qd47qlob","slide":1,"bbox":[112,399,778,31]}
+{"kind":"shape","id":"sh/298rip8j","slide":1,"bbox":[112,430,358,133]}
+{"kind":"shape","id":"sh/nuh8rup4","slide":1,"bbox":[112,430,763,133]}
+{"kind":"textbox","id":"sh/ovq9kzqp","slide":1,"name":"research-text","text":"文\n献\n调\n研","textPreview":"文 | 献 | 调 | 研","textChars":7,"textLines":4,"bbox":[76,285,32,218]}
+{"kind":"textbox","id":"sh/pwzqt47a","slide":1,"name":"research-caption","text":"理论\n依据","textPreview":"理论 | 依据","textChars":5,"textLines":2,"bbox":[75,518,34,64]}
+{"kind":"textbox","id":"sh/ax8rm98v","slide":1,"name":"input-label","text":"输入层","textPreview":"输入层","textChars":3,"textLines":1,"bbox":[148,286,160,22]}
+{"kind":"textbox","id":"sh/byh8vup0","slide":1,"name":"input-main","text":"GPS 模块 + YOLO","textPreview":"GPS 模块 + YOLO","textChars":13,"textLines":1,"bbox":[144,313,168,28]}
+{"kind":"textbox","id":"sh/czq9ozql","slide":1,"name":"input-note","text":"每帧目标识别 / 坐标","textPreview":"每帧目标识别 / 坐标","textChars":11,"textLines":1,"bbox":[145,345,166,24]}
+{"kind":"textbox","id":"sh/x0jax476","slide":1,"name":"hub-title","text":"ESP32 协调控制","textPreview":"ESP32 协调控制","textChars":10,"textLines":1,"bbox":[520,282,184,30]}
+{"kind":"textbox","id":"sh/q1o7a58b","slide":1,"name":"hub-note","text":"接收坐标系\n联动 GPIO / 执行单元","textPreview":"接收坐标系 | 联动 GPIO / 执行单元","textChars":20,"textLines":2,"bbox":[520,323,184,42]}
+{"kind":"textbox","id":"sh/r2x8japw","slide":1,"name":"hub-chip","text":"控制与转发枢纽","textPreview":"控制与转发枢纽","textChars":7,"textLines":1,"bbox":[548,372,130,20]}
+{"kind":"textbox","id":"sh/tw3up8re","slide":1,"name":"display-title","text":"屏幕显示","textPreview":"屏幕显示","textChars":4,"textLines":1,"bbox":[912,238,176,24]}
+{"kind":"textbox","id":"sh/8vutw3at","slide":1,"name":"display-note","text":"目标状态与坐标","textPreview":"目标状态与坐标","textChars":7,"textLines":1,"bbox":[912,270,176,20]}
+{"kind":"textbox","id":"sh/7ulcny98","slide":1,"name":"mech-title","text":"机械结构","textPreview":"机械结构","textChars":4,"textLines":1,"bbox":[912,370,176,24]}
+{"kind":"textbox","id":"sh/6tcbuts3","slide":1,"name":"mech-note","text":"执行机构 → 高塔","textPreview":"执行机构 → 高塔","textChars":9,"textLines":1,"bbox":[912,402,176,20]}
+{"kind":"textbox","id":"sh/hknutsrq","slide":1,"name":"comm-title","text":"通信：ESP32 mini ↔ 树莓派","textPreview":"通信：ESP32 mini ↔ 树莓派","textChars":19,"textLines":1,"bbox":[493,539,238,23]}
+{"kind":"textbox","id":"sh/gzetkna5","slide":1,"name":"comm-note","text":"Wi‑Fi 数据交互","textPreview":"Wi‑Fi 数据交互","textChars":10,"textLines":1,"bbox":[515,569,194,19]}
+{"kind":"textbox","id":"sh/vylcri9k","slide":1,"name":"calc-title","text":"训练与计算：YOLO + 余弦法","textPreview":"训练与计算：YOLO + 余弦法","textChars":16,"textLines":1,"bbox":[900,539,240,23]}
+{"kind":"textbox","id":"sh/uxcbydsz","slide":1,"name":"calc-note","text":"目标小人数据集 → 计算高度","textPreview":"目标小人数据集 → 计算高度","textChars":14,"textLines":1,"bbox":[900,569,240,19]}
+{"kind":"textbox","id":"sh/xojahor6","slide":1,"name":"input-header","text":"01 视觉与定位输入","textPreview":"01 视觉与定位输入","textChars":10,"textLines":1,"bbox":[128,211,250,28]}
+{"kind":"textbox","id":"sh/c3atojal","slide":1,"name":"output-header","text":"03 反馈与执行","textPreview":"03 反馈与执行","textChars":8,"textLines":1,"bbox":[850,169,280,28]}
+{"kind":"textbox","id":"sh/0jixwra9","slide":1,"name":"compute-header","text":"02 通信、训练与计算","textPreview":"02 通信、训练与计算","textChars":11,"textLines":1,"bbox":[470,482,300,28]}
+{"kind":"textbox","id":"sh/1krepwbu","slide":1,"name":"support-legend","text":"虚线表示：文献调研提供理论与方案依据","textPreview":"虚线表示：文献调研提供理论与方案依据","textChars":18,"textLines":1,"bbox":[140,620,350,20]}
+{"kind":"textbox","id":"sh/ehgfuhc3","slide":1,"name":"footer","text":"方案概览｜可用于项目汇报与系统设计讨论","textPreview":"方案概览｜可用于项目汇报与系统设计讨论","textChars":19,"textLines":1,"bbox":[72,666,480,18]}
+{"kind":"textbox","id":"sh/fipwnmto","slide":1,"name":"footer2","text":"GPS · YOLO · ESP32","textPreview":"GPS · YOLO · ESP32","textChars":18,"textLines":1,"bbox":[1035,666,173,18]}
+{"kind":"notes","id":"nt/a1wwwt","slide":1,"text":""}

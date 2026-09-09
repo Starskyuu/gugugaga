@@ -1,0 +1,142 @@
+[
+  {
+    "dir": "UnmannedRescueBoat_7cm",
+    "oldName": "Unmanned_Rescue_Boat_7x5cm.blend",
+    "newName": "01_无人救援船_7×5厘米.blend"
+  },
+  {
+    "dir": "UnmannedRescueBoat_7cm",
+    "oldName": "Unmanned_Rescue_Boat_7x5cm.blend1",
+    "newName": "01_无人救援船_7×5厘米.blend1"
+  },
+  {
+    "dir": "UnmannedRescueBoat_7cm",
+    "oldName": "Preview_Bow.png",
+    "newName": "01_无人救援船_船首视图.png"
+  },
+  {
+    "dir": "UnmannedRescueBoat_7cm",
+    "oldName": "Preview_Stern.png",
+    "newName": "01_无人救援船_船尾双桨视图.png"
+  },
+  {
+    "dir": "UnmannedRescueBoat_7cm",
+    "oldName": "Preview_Deck.png",
+    "newName": "01_无人救援船_甲板俯视图.png"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Unmanned_Rescue_Base_4Boats.blend",
+    "newName": "02_无人救援基地_四船泊位_基础版.blend"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Unmanned_Rescue_Base_4Boats.blend1",
+    "newName": "02_无人救援基地_四船泊位_基础版.blend1"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Unmanned_Rescue_Base_8EaveLights.blend",
+    "newName": "02_无人救援基地_四船泊位_八盏檐灯版_最新版.blend"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Unmanned_Rescue_Base_8EaveLights.blend1",
+    "newName": "02_无人救援基地_四船泊位_八盏檐灯版_最新版.blend1"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Preview_Exterior.png",
+    "newName": "02_无人救援基地_基础版_开门外观.png"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Preview_Doors_Closed.png",
+    "newName": "02_无人救援基地_基础版_关门外观.png"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Preview_Deck_Cutaway.png",
+    "newName": "02_无人救援基地_基础版_去顶甲板图.png"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Preview_Four_Bays.png",
+    "newName": "02_无人救援基地_四船泊位俯视图.png"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Preview_8EaveLights.png",
+    "newName": "02_无人救援基地_八盏檐灯版_外观.png"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "Preview_8EaveLights_Night.png",
+    "newName": "02_无人救援基地_八盏檐灯版_夜间照明.png"
+  },
+  {
+    "dir": "UnmannedRescueBase",
+    "oldName": "README.md",
+    "newName": "02_无人救援基地_使用说明.md"
+  },
+  {
+    "dir": "RescuePerson",
+    "oldName": "Rescue_Person_Asset.blend",
+    "newName": "03_救援小人_独立模型_含骨架与站坐姿态.blend"
+  },
+  {
+    "dir": "RescuePerson",
+    "oldName": "Rescue_Person_Fit_Demo.blend",
+    "newName": "03_救援小人_座椅适配与六人乘船演示.blend"
+  },
+  {
+    "dir": "RescuePerson",
+    "oldName": "Rescue_Person_Fit_Demo.blend1",
+    "newName": "03_救援小人_座椅适配与六人乘船演示.blend1"
+  },
+  {
+    "dir": "RescuePerson",
+    "oldName": "Preview_Standing.png",
+    "newName": "03_救援小人_站姿.png"
+  },
+  {
+    "dir": "RescuePerson",
+    "oldName": "Preview_Seated.png",
+    "newName": "03_救援小人_原船座椅坐姿.png"
+  },
+  {
+    "dir": "RescuePerson",
+    "oldName": "Preview_Six_Aboard.png",
+    "newName": "03_救援小人_六人乘船效果.png"
+  },
+  {
+    "dir": "RescuePerson",
+    "oldName": "README.md",
+    "newName": "03_救援小人_使用说明.md"
+  },
+  {
+    "dir": "scripts",
+    "oldName": "create_unmanned_rescue_boat.py",
+    "newName": "01_生成无人救援船.py"
+  },
+  {
+    "dir": "scripts",
+    "oldName": "create_unmanned_rescue_base.py",
+    "newName": "02_生成无人救援基地.py"
+  },
+  {
+    "dir": "scripts",
+    "oldName": "refine_rescue_base.py",
+    "newName": "02_优化基地登梯与转移平台.py"
+  },
+  {
+    "dir": "scripts",
+    "oldName": "add_base_eave_searchlights.py",
+    "newName": "02_加装八盏45度檐下探照灯.py"
+  },
+  {
+    "dir": "scripts",
+    "oldName": "create_rescue_person.py",
+    "newName": "03_生成救援小人与座椅适配演示.py"
+  }
+]

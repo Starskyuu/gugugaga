@@ -70,6 +70,17 @@ class PiRescueServiceTests(unittest.TestCase):
         self.assertEqual(len(targets), 4)
         self.assertTrue(all({"id", "x", "y"} <= set(target) for target in targets))
 
+    def test_target_just_outside_safety_zone_survives_grid_rounding(self):
+        frame = self.frame(0)
+        frame["people"] = [{"id": "edge_person", "x": 30.0, "y": 40.2}]
+        self.service.accept_frame(frame)
+        plans, algorithm = self.service.compute_plans(
+            list(self.service.boats.values()), list(self.service.victims.values())
+        )
+        assigned = [victim for plan in plans for victim in plan.victim_ids]
+        self.assertEqual(algorithm, "exact_dp_astar")
+        self.assertEqual(assigned, ["edge_person"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,24 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 245860)
+VBCSCompiler prewarm took 6.04 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch; Version is '6000.6.0f1 (f7f8ed4d1e24) revision 16251117'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Lenovo" at "2026-09-07T07:03:46.8310856Z"
+OS: 'Windows 11  (10.0.26200) CoreCountrySpecific' Language: 'zh' Physical Memory: 32189 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-09-07T07:03:46Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Unity.exe
+-batchmode
+-nographics
+-projectPath
+F:\gugugaga\07enSimulation\FourBoatRescue3D
+-executeMethod
+RescueSimulationBatchVerifier.Run
+-logFile
+F:\gugugaga\07enSimulation\FourBoatRescue3D\station_avoidance_verification.log
+Successfully changed project path to: F:\gugugaga\07enSimulation\FourBoatRescue3D
+F:/gugugaga/07enSimulation/FourBoatRescue3D
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 1

@@ -24,3 +24,16 @@ venv/
 Thumbs.db
 Desktop.ini
 
+# Unity and build outputs
+**/Library/
+**/Temp/
+**/Logs/
+**/UserSettings/
+**/Builds/
+**/obj/
+*.mp4
+
+# JavaScript dependencies and generated output
+**/node_modules/
+**/.next/
+**/dist/

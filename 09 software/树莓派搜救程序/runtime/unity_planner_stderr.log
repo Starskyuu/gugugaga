@@ -1,0 +1,15 @@
+2026-09-04 10:24:17,380 INFO pi_rescue_service: Listening for vision coordinates on UDP 0.0.0.0:9200
+2026-09-04 10:24:55,533 INFO pi_rescue_service: Plan v1: exact_dp_astar, 1 targets, 1.0 ms
+2026-09-04 10:26:31,915 INFO pi_rescue_service: Plan v2: exact_dp_astar, 1 targets, 2.7 ms
+2026-09-04 10:26:58,433 INFO pi_rescue_service: Plan v3: exact_dp_astar, 1 targets, 2.9 ms
+2026-09-04 10:29:20,500 INFO pi_rescue_service: Plan v4: exact_dp_astar, 10 targets, 181.3 ms
+2026-09-04 10:29:25,700 INFO pi_rescue_service: Plan v5: exact_dp_astar, 10 targets, 180.9 ms
+2026-09-04 10:29:39,373 INFO pi_rescue_service: Plan v6: exact_dp_astar, 10 targets, 167.6 ms
+2026-09-04 10:33:13,962 INFO pi_rescue_service: Plan v7: exact_dp_astar, 10 targets, 168.6 ms
+2026-09-04 10:33:15,262 INFO pi_rescue_service: Plan v8: exact_dp_astar, 10 targets, 175.0 ms
+2026-09-04 10:33:21,054 INFO pi_rescue_service: Plan v9: balanced_greedy_visibility, 50 targets, 0.5 ms
+2026-09-04 10:33:51,033 INFO pi_rescue_service: Plan v10: exact_dp_astar, 10 targets, 182.4 ms
+2026-09-04 10:34:43,280 INFO pi_rescue_service: Plan v11: balanced_greedy_visibility, 90 targets, 1.2 ms
+2026-09-04 10:34:52,555 INFO pi_rescue_service: Plan v12: balanced_greedy_visibility, 100 targets, 1.7 ms
+2026-09-04 10:35:07,134 INFO pi_rescue_service: Plan v13: balanced_greedy_visibility, 100 targets, 1.5 ms
+2026-09-04 10:35:15,567 INFO pi_rescue_service: Plan v14: balanced_greedy_visibility, 100 targets, 1.2 ms

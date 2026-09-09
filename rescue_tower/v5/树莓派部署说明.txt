@@ -1,0 +1,55 @@
+智能救援塔 V5（v4 + 禁航区规避）
+
+一、需要复制什么
+把本文件夹复制到树莓派即可。
+v5 相比 v4 只改了：config.py（新增 OBSTACLES_MM 禁航区）、
+tests/test_offline.py（示例坐标移出禁航区）、main.py（调试示例坐标）和文档；
+固件、PID 参数与 v4 完全相同。
+
+二、建议放置位置
+把本文件夹改名为 v5，并放到原 rescue_tower 目录下面：
+
+rescue_tower/
+├── raspberry_pi/vision/666.py
+└── v5/
+    ├── main.py
+    ├── start.sh
+    ├── core/
+    ├── planning/
+    ├── static/
+    ├── tests/
+    └── firmware/
+
+三、固件
+v5 固件与 v4 相同（boat_main.py 已带 /M?A=..&B=.. 接口）：
+- 从 v4 升级：无需重烧；
+- 从 v3 或全新部署：把 v5/firmware/boat_main.py 烧到小船 ESP32-C3，
+  否则自动航行无法工作（手动遥控不受影响）。升降台、水位固件不用动。
+
+四、运行
+cd ~/rescue_tower/v5
+chmod +x start.sh
+./start.sh
+
+浏览器打开：http://树莓派IP:8080
+
+五、禁航区（v5 新增）
+config.py 的 OBSTACLES_MM 已按现场要求配好 10 块不能航行区域：
+ArUco 7/9/12 号标记为中心的 30×30 区域、四个边角合围区
+（(70,190)、(70,440)、(535,180)、(420,75)）、上边缘两段
+（(130,525)-(290,525)、(350,525)-(460,525)），
+以及对角线 (175,210)-(430,390) 的中央矩形。
+规划器自动绕行，并在每个矩形外再留 12 mm 安全余量；改场地时只改这里。
+
+六、调参（先仿真，再下水）
+cd ~/rescue_tower/v5
+python3 tests/sim_pid.py
+python3 -m unittest discover -s tests -v
+
+把仿真调好的参数抄进 config.py 的 PID 块，再下水实测。
+转向反了改 PID_TURN_SIGN 为 -1；远处起不来加大 PID_MIN_CRUISE；
+终点绕圈加大 PID_MIN_APPROACH 或 PID_ACCEPT_RADIUS_MM。
+
+七、注意
+如果树莓派上的 666.py 不在 rescue_tower/raspberry_pi/vision/，请修改 start.sh 第一条 python3 命令中的路径。
+config.py 用于修改小船 IP、升降台 IP、水位阈值、场地尺寸、禁航区和 PID 参数。

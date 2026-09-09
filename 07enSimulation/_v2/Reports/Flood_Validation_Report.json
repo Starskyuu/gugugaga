@@ -1,0 +1,70 @@
+{
+    "allPassed": true,
+    "checks": [
+        {
+            "name": "regional_current_differs_from_background",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "shelf_depth_3mm",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "open_water_depth_30mm",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "exposed_shelf_has_no_water",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "outside_domain_has_no_flow",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "rising_water_lifts_boat",
+            "passed": true,
+            "value": 0.01499993447214365
+        },
+        {
+            "name": "shelf_physx_contact_supports_boat",
+            "passed": true,
+            "value": -0.0023798265028744936
+        },
+        {
+            "name": "grounding_detected_on_shelf",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "debris_drifts_with_flow",
+            "passed": true,
+            "value": 0.03906061127781868
+        },
+        {
+            "name": "debris_floats",
+            "passed": true,
+            "value": 0.0018904024036601186
+        },
+        {
+            "name": "building_stops_driven_boat",
+            "passed": true,
+            "value": 0.21508915722370148
+        },
+        {
+            "name": "danger_region_reports_strong_flow",
+            "passed": true,
+            "value": 0.0
+        },
+        {
+            "name": "eight_debris_share_physics_clock",
+            "passed": true,
+            "value": 0.0
+        }
+    ]
+}

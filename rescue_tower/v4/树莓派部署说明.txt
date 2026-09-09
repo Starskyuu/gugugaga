@@ -1,0 +1,44 @@
+智能救援塔 V4（v3 + PID 连续油门导航）
+
+一、需要复制什么
+只需要把“智能救援塔_V4”文件夹复制到树莓派，不需要重新复制模型。
+（v4 新增：core/nav_control.py、tests/sim_pid.py；firmware/boat_main.py 已换成带 /M 接口的新固件）
+
+二、建议放置位置
+把本文件夹改名为 v4，并放到原 rescue_tower 目录下面：
+
+rescue_tower/
+├── raspberry_pi/vision/666.py
+└── v4/
+    ├── main.py
+    ├── start.sh
+    ├── core/
+    ├── planning/
+    ├── static/
+    ├── tests/
+    └── firmware/
+
+三、必做：烧录新船固件
+把 v4/firmware/boat_main.py 烧到小船 ESP32-C3。
+旧固件没有 /M?A=..&B=.. 接口，自动航行无法工作（手动遥控不受影响）。
+升降台、水位固件不用动。
+
+四、运行
+cd ~/rescue_tower/v4
+chmod +x start.sh
+./start.sh
+
+浏览器打开：http://树莓派IP:8080
+
+五、调参（先仿真，再下水）
+cd ~/rescue_tower/v4
+python3 tests/sim_pid.py
+python3 -m unittest discover -s tests -v
+
+把仿真调好的参数抄进 config.py 的 PID 块，再下水实测。
+转向反了改 PID_TURN_SIGN 为 -1；远处起不来加大 PID_MIN_CRUISE；
+终点绕圈加大 PID_MIN_APPROACH 或 PID_ACCEPT_RADIUS_MM。
+
+六、注意
+如果树莓派上的 666.py 不在 rescue_tower/raspberry_pi/vision/，请修改 start.sh 第一条 python3 命令中的路径。
+config.py 用于修改小船 IP、升降台 IP、水位阈值、场地尺寸、障碍物和 PID 参数。

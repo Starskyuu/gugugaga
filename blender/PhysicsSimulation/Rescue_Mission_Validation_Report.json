@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "workflow_completed": true,
+    "two_loads_two_unloads": true,
+    "loaded_mass_matches": true,
+    "empty_mass_restored": true,
+    "hull_pose_continuous_at_load_changes": true,
+    "no_mission_contact": true,
+    "positive_floor_clearance": true,
+    "loaded_draft_increases": true,
+    "roll_pitch_below_12_deg": true,
+    "doors_open_during_transit": true,
+    "reverse_rpm_on_return": true,
+    "mooring_capture_within_1mm": true,
+    "center_of_mass_changes": true,
+    "closed_gate_blocks_forced_exit": true,
+    "payload_changes_inertia": true,
+    "unload_restores_inertia": true,
+    "last_person_reaches_bench_before_completion": true,
+    "half_time_step_stage_times_within_50ms": true,
+    "half_time_step_no_mission_contact": true
+  },
+  "all_passed": true,
+  "empty_mass_g": 12.0,
+  "loaded_mass_g": 14.0,
+  "upright_draft_empty_mm": 4.568480999397114,
+  "upright_draft_loaded_mm": 5.234452639573041,
+  "maximum_roll_pitch_deg": 2.1695893663451185,
+  "conservative_floor_clearance_mm": 5.367471528826605,
+  "duration_s": 80.36666666661412,
+  "limitations": "Functional/numerical validation, not measured model calibration. Only north-bay planar box contacts; people kinematic; mooring ideal.",
+  "closed_gate_test": {
+    "contact_steps": 1186,
+    "final_hull_y_m": 0.09610130593201613,
+    "max_penetration_mm": 0.012408382899179587
+  },
+  "max_stage_end_time_difference_s": 0.0010416666769366145
+}

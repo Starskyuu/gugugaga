@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "equal_rpm_moves_forward": true,
+    "motor_command_zero_slows_boat": true,
+    "differential_commands_turn_opposite_directions": true,
+    "unpowered_current_drifts_boat": true,
+    "collision_generates_impulse": true,
+    "collision_penetration_below_0_5_mm": true,
+    "collision_stops_forward_motion": true,
+    "autopilot_reaches_goal": true,
+    "autopilot_no_contact": true,
+    "final_goal_error_below_20mm": true,
+    "time_step_endpoint_difference_below_2mm": true,
+    "tank_wall_generates_contact": true,
+    "tank_wall_blocks_exit": true
+  },
+  "all_passed": true,
+  "collision_max_penetration_mm": 0.02431473661372932,
+  "collision_events": 1,
+  "left_yaw_rate_rad_s": 0.14283486624542152,
+  "right_yaw_rate_rad_s": -0.14283486624542144,
+  "goal_error_mm": 13.354224021578226,
+  "final_speed_mm_s": 0.995815287868091,
+  "endpoint_convergence_mm": 0.005482820351759077,
+  "tank_wall_final_x_m": 0.2659532125825418
+}

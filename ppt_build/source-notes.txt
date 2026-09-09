@@ -1,0 +1,3 @@
+Source: user-provided whiteboard photo (C:\Users\Lenovo\AppData\Local\Temp\codex-clipboard-45c0bc48-25e6-416e-9257-d829bc276b31.jpg)
+No external sources or externally sourced assets used.
+Content transcribed and organized as a conceptual workflow. Ambiguous handwritten labels were normalized as: GPS + YOLO input, ESP32 coordination, screen display, mechanical structure/high tower, ESP32 mini/Raspberry Pi Wi-Fi communication, YOLO training data, cosine-based height calculation, PPT presentation.

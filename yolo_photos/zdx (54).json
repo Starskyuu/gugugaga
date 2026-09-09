@@ -1,0 +1,301 @@
+{
+  "version": "4.0.5",
+  "flags": {},
+  "checked": false,
+  "shapes": [
+    {
+      "label": "person",
+      "score": 0.30938804149627686,
+      "points": [
+        [
+          897.623779296875,
+          316.64056396484375
+        ],
+        [
+          950.4752197265625,
+          316.64056396484375
+        ],
+        [
+          950.4752197265625,
+          363.18048095703125
+        ],
+        [
+          897.623779296875,
+          363.18048095703125
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": 0.0634152889251709,
+      "points": [
+        [
+          929.800048828125,
+          548.8304443359375
+        ],
+        [
+          978.101318359375,
+          548.8304443359375
+        ],
+        [
+          978.101318359375,
+          599.50244140625
+        ],
+        [
+          929.800048828125,
+          599.50244140625
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": 0.06243455410003662,
+      "points": [
+        [
+          617.24072265625,
+          587.6780395507812
+        ],
+        [
+          679.4468994140625,
+          587.6780395507812
+        ],
+        [
+          679.4468994140625,
+          630.4246215820312
+        ],
+        [
+          617.24072265625,
+          630.4246215820312
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": 0.04018750786781311,
+      "points": [
+        [
+          524.8970336914062,
+          214.96258544921875
+        ],
+        [
+          594.8516235351562,
+          214.96258544921875
+        ],
+        [
+          594.8516235351562,
+          262.59490966796875
+        ],
+        [
+          524.8970336914062,
+          262.59490966796875
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": 0.03293570876121521,
+      "points": [
+        [
+          490.72027587890625,
+          364.6368408203125
+        ],
+        [
+          541.2821655273438,
+          364.6368408203125
+        ],
+        [
+          541.2821655273438,
+          411.5350341796875
+        ],
+        [
+          490.72027587890625,
+          411.5350341796875
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": null,
+      "points": [
+        [
+          478.2075471698114,
+          269.748427672956
+        ],
+        [
+          536.6981132075473,
+          269.748427672956
+        ],
+        [
+          536.6981132075473,
+          299.937106918239
+        ],
+        [
+          478.2075471698114,
+          299.937106918239
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": null,
+      "points": [
+        [
+          493.30188679245293,
+          302.4528301886793
+        ],
+        [
+          520.9748427672956,
+          302.4528301886793
+        ],
+        [
+          520.9748427672956,
+          352.1383647798741
+        ],
+        [
+          493.30188679245293,
+          352.1383647798741
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": null,
+      "points": [
+        [
+          452.4213836477988,
+          296.7924528301887
+        ],
+        [
+          490.7861635220126,
+          296.7924528301887
+        ],
+        [
+          490.7861635220126,
+          360.94339622641513
+        ],
+        [
+          452.4213836477988,
+          360.94339622641513
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": null,
+      "points": [
+        [
+          614.685534591195,
+          506.22641509433964
+        ],
+        [
+          678.8364779874214,
+          506.22641509433964
+        ],
+        [
+          678.8364779874214,
+          536.4150943396226
+        ],
+        [
+          614.685534591195,
+          536.4150943396226
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "person",
+      "score": null,
+      "points": [
+        [
+          815.3144654088051,
+          86.72955974842768
+        ],
+        [
+          871.9182389937107,
+          86.72955974842768
+        ],
+        [
+          871.9182389937107,
+          136.4150943396226
+        ],
+        [
+          815.3144654088051,
+          136.4150943396226
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "zdx (54).jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280
+}

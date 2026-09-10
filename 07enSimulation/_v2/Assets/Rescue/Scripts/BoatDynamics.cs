@@ -158,9 +158,12 @@ namespace RescueSim
         public void ResetState(Vector3 position,Quaternion rotation)
         {
             Initialize();portCommand=starboardCommand=0;PortRpm=StarboardRpm=0;portAngle=starboardAngle=0;
+            bool moored=Body.isKinematic;Body.isKinematic=false;
             Body.position=position;Body.rotation=rotation;Body.linearVelocity=Body.angularVelocity=Vector3.zero;
+            Body.isKinematic=moored;
             CollisionCount=0;LastCollisionImpulse=0;Body.WakeUp();Physics.SyncTransforms();
         }
+        public void StopMotors(){portCommand=starboardCommand=0;PortRpm=StarboardRpm=0;}
         void OnCollisionEnter(Collision c){CollisionCount++;LastCollisionImpulse=c.impulse.magnitude;}
         void OnDrawGizmosSelected()
         {

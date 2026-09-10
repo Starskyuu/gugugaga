@@ -1,0 +1,13 @@
+{
+    "name": "High_Water_Stress",
+    "expected": "",
+    "outcome": "Outbound:Tracking collision-free path | Blocked:No safe pickup approach | Outbound:Tracking collision-free path | Returning:Returning to home dock",
+    "passed": false,
+    "countsValid": false,
+    "massValid": false,
+    "capacityValid": false,
+    "seconds": 30.016380310058594,
+    "maxPassengers": 0.0,
+    "rescued": 0,
+    "contacts": []
+}

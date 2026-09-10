@@ -1,0 +1,13 @@
+{"kind":"deck","id":"pr/unj8nr","name":"Deck"}
+{"kind":"layout","layoutId":"4f622207-4b79-4d40-ac8c-6e49ac46d600","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"864ace92-bed2-403b-8cec-81cbb8093a64","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/w08or9","slide":1,"title":"传统 A* 与改进 A*：公式对比","textShapes":8}
+{"kind":"textbox","id":"sh/3ad03ylw","slide":1,"text":"传统 A* 与改进 A*：公式对比","textPreview":"传统 A* 与改进 A*：公式对比","textChars":17,"textLines":1,"bbox":[64,44,1152,72]}
+{"kind":"textbox","id":"sh/obm1w32h","slide":1,"text":"传统 A*（距离代价）","textPreview":"传统 A*（距离代价）","textChars":11,"textLines":1,"bbox":[64,153,1152,44]}
+{"kind":"textbox","id":"sh/pcv25832","slide":1,"text":"f(n) = g(n) + h(n)       g(n) = Σ Δsᵢ","textPreview":"f(n) = g(n) + h(n)       g(n) = Σ Δsᵢ","textChars":37,"textLines":1,"bbox":[64,209,1152,65]}
+{"kind":"textbox","id":"sh/qd4jydkn","slide":1,"text":"改进 A*（加入逆流惩罚）","textPreview":"改进 A*（加入逆流惩罚）","textChars":13,"textLines":1,"bbox":[64,311,1152,44]}
+{"kind":"textbox","id":"sh/bedk7il8","slide":1,"text":"f′(n) = g′(n) + h(n)","textPreview":"f′(n) = g′(n) + h(n)","textChars":20,"textLines":1,"bbox":[64,368,1152,59]}
+{"kind":"textbox","id":"sh/cfm10n2d","slide":1,"text":"g′(n) = Σ Δsᵢ × [1 + max(0, −vᵢ · dᵢ) / v₀]","textPreview":"g′(n) = Σ Δsᵢ × [1 + max(0, −vᵢ · dᵢ) / v₀]","textChars":43,"textLines":1,"bbox":[64,427,1152,64]}
+{"kind":"textbox","id":"sh/dgv29s3y","slide":1,"text":"Δsᵢ：每段距离    vᵢ：当地流速    dᵢ：行驶方向单位向量\nv₀ = 0.04 m/s：惩罚尺度    h(n)：到终点的欧氏距离（保持不变）","textPreview":"Δsᵢ：每段距离    vᵢ：当地流速    dᵢ：行驶方向单位向量 | v₀ = 0.04 m/s：惩罚尺度    h(n)：到终点的欧氏距离（保持不变）","textChars":76,"textLines":2,"bbox":[64,526,1152,84]}
+{"kind":"textbox","id":"sh/6h0jmtk3","slide":1,"text":"变化：累计代价增加逆流惩罚。避障通过通行约束与在线重规划实现。","textPreview":"变化：累计代价增加逆流惩罚。避障通过通行约束与在线重规划实现。","textChars":31,"textLines":1,"bbox":[64,639,1152,43]}
+{"kind":"notes","id":"nt/w08or9","slide":1,"text":"公式对应当前项目 F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueNavigation.cs 的 Plan 方法。求和范围为起点到当前节点 n 的路径边，d_i 是每段行驶方向单位向量。边代价为 step.magnitude*(1+Max(0,-Dot(flow,step.normalized))/.04f)。逆流提高代价，顺流不额外奖励。g 和 g′ 分别表示搜索过程中已知的最小累计距离代价和流场加权代价。两种形式都保留 f=g+h 框架和欧氏距离启发式。这里的传统基线选用距离代价，A* 本身也允许其他代价函数。船体占用、水深、其他船和漂浮物约束在 Walkable 等函数中处理，不是额外虚构的公式惩罚项。RescueMission.cs 的 Navigate 约每1.2秒或路径为空时重新规划。传统 A* 能绕开已知障碍，图中公式并不意味着传统 A* 不具备避障能力。流场加权距离不是实际能耗或航行时间。A* 原始文献：Hart, Nilsson, Raphael (1968), https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/astar.pdf 。"}

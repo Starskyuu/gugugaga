@@ -1,0 +1,95 @@
+{
+    "passed": true,
+    "cases": [
+        {
+            "name": "Calm_24_People",
+            "expected": "Complete with no more than six per boat",
+            "outcome": "Complete",
+            "passed": true,
+            "countsValid": true,
+            "massValid": true,
+            "capacityValid": true,
+            "seconds": 86.05390167236328,
+            "maxPassengers": 6.0,
+            "rescued": 24,
+            "contacts": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "Street_24_People",
+            "expected": "Complete with no more than six per boat",
+            "outcome": "Complete",
+            "passed": true,
+            "countsValid": true,
+            "massValid": true,
+            "capacityValid": true,
+            "seconds": 73.81795501708984,
+            "maxPassengers": 6.0,
+            "rescued": 24,
+            "contacts": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "Three_Boats_24_People",
+            "expected": "Complete with no more than six per boat",
+            "outcome": "Complete",
+            "passed": true,
+            "countsValid": true,
+            "massValid": true,
+            "capacityValid": true,
+            "seconds": 151.22386169433594,
+            "maxPassengers": 6.0,
+            "rescued": 24,
+            "contacts": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "Shallow_Reject_Unsafe_Routes",
+            "expected": "No false rescue in non-navigable shallow water",
+            "outcome": "ShallowBlocked",
+            "passed": true,
+            "countsValid": true,
+            "massValid": true,
+            "capacityValid": true,
+            "seconds": 11.999988555908203,
+            "maxPassengers": 0.0,
+            "rescued": 0,
+            "contacts": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "High_Water_Stress",
+            "expected": "Bounded stress run; partial rescue permitted",
+            "outcome": "Partial",
+            "passed": true,
+            "countsValid": true,
+            "massValid": true,
+            "capacityValid": true,
+            "seconds": 34.999637603759766,
+            "maxPassengers": 5.0,
+            "rescued": 0,
+            "contacts": [
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}

@@ -1,4 +1,6 @@
-# Model-Scale Rescue — Unity Steps 1–7
+# Model-Scale Rescue — Unity Steps 1–8
+
+第8步控制台：`Builds/ControlRoom/RescueControlRoom.exe`。整合场景控制、救援统计、倍速、人员/事件面板与CSV/JSON导出。使用方法和验证范围见 [Control Room Guide](Control_Room_Guide.md)。
 
 第6–7步自动救援版：`Builds/Mission/RescueMissionSimulation.exe`。4艘船自动规划、差速航行、接人并返回中心基地，详见 [Autonomous Rescue Guide](Autonomous_Rescue_Guide.md)。此版本包含自由相机与螺旋桨绑定修复。
 

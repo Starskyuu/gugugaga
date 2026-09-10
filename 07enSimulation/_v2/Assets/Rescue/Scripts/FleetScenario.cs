@@ -58,6 +58,7 @@ namespace RescueSim
         }
         void OnGUI()
         {
+            if(environment.dashboard)return;
             float scale=Mathf.Max(.6f,Screen.height/900f);GUI.matrix=Matrix4x4.Scale(Vector3.one*scale);
             float width=Screen.width/scale,height=Screen.height/scale;
             GUILayout.BeginArea(new Rect(width-306,16,290,height-32),GUI.skin.box);scroll=GUILayout.BeginScrollView(scroll);

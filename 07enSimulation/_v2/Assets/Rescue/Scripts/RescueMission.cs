@@ -6,7 +6,7 @@ namespace RescueSim
 {
     public sealed class RescueMission:MonoBehaviour
     {
-        public enum Phase { Idle, Outbound, Approaching, Boarding, Returning, Unloading, Blocked, Disabled, Manual, Complete }
+        public enum Phase { Idle, Outbound, Approaching, Boarding, Returning, Unloading, Blocked, Disabled, Manual, Complete, OpeningDoors, Launching, Aligning, Reversing, Docked }
         [Serializable] public sealed class Agent
         {
             public Phase phase;public RescueVictim target;
@@ -18,6 +18,7 @@ namespace RescueSim
         }
         public FleetScenario fleet;
         public RescueNavigation navigation;
+        public StationLaunch launch;
         public Agent[] agents;
         public Vector3[] dockPoints,refugeSeats;
         public GameObject seatedPrefab;
@@ -31,7 +32,8 @@ namespace RescueSim
         float dispatchTimer;
         int nextRefugeSlot;
         bool initialized;
-        public bool Complete=>rescued==fleet.dispatcher.victims.Length;
+        public bool PeopleRescued=>rescued==fleet.dispatcher.victims.Length;
+        public bool Complete=>PeopleRescued&&(!launch||launch.AllParked);
         public bool IsManual(int index)=>manualBoat==index;
         public bool AcceptsAssignments(int index)=>!initialized||(!IsManual(index)&&agents[index].phase!=Phase.Returning&&agents[index].phase!=Phase.Unloading&&agents[index].phase!=Phase.Disabled);
         public void Initialize()
@@ -41,6 +43,7 @@ namespace RescueSim
             for(int i=0;i<agents.Length;i++){boats[i].Initialize();agents[i]=new Agent{lastPosition=boats[i].Body.position};}
             foreach(var v in fleet.dispatcher.victims)v.Initialize();
             Physics.SyncTransforms();navigation.Rebuild();initialized=true;
+            if(launch)launch.ResetLaunch();
         }
         void Start()
         {
@@ -54,6 +57,7 @@ namespace RescueSim
         public void StopAutonomy(){running=false;foreach(var b in fleet.dispatcher.boats)b.portCommand=b.starboardCommand=0;}
         public void TakeManual(int index)
         {
+            if(launch&&(!launch.departed[index]||launch.parked[index]))return;
             if(manualBoat>=0)ResumeBoat(manualBoat);
             CancelTransfer(index);
             manualBoat=index;agents[index].phase=Phase.Manual;fleet.dispatcher.boats[index].portCommand=fleet.dispatcher.boats[index].starboardCommand=0;
@@ -80,11 +84,13 @@ namespace RescueSim
             foreach(var visual in refugeVisuals)if(visual){visual.SetActive(false);if(Application.isPlaying)Destroy(visual);else DestroyImmediate(visual);}refugeVisuals.Clear();
             for(int i=0;i<agents.Length;i++){fleet.dispatcher.boats[i].SetPassengerCount(0);agents[i]=new Agent{lastPosition=fleet.boatSpawns[i]};}
             navigation.Rebuild();
+            if(launch)launch.ResetLaunch();
         }
         public void Tick(float dt)
         {
             Initialize();simulationSeconds+=dt;
             if(!running)return;
+            if(launch)launch.Tick(dt);
             dispatchTimer-=dt;if(dispatchTimer<=0&&fleet.dispatcher.automatic){dispatchTimer=1;fleet.dispatcher.Dispatch();}
             for(int i=0;i<agents.Length;i++)UpdateAgent(i,dt);
         }
@@ -92,6 +98,7 @@ namespace RescueSim
         {
             var a=agents[i];var b=fleet.dispatcher.boats[i];a.travel+=RescueNavigation.FlatDistance(a.lastPosition,b.Body.position);a.lastPosition=b.Body.position;
             maxPassengers=Mathf.Max(maxPassengers,b.Passengers);
+            if(launch&&launch.Control(i,dt))return;
             if(IsManual(i))return;
             if(!fleet.dispatcher.available[i]||b.Capsized)
             {
@@ -99,6 +106,7 @@ namespace RescueSim
                 a.phase=Phase.Disabled;a.message=b.Capsized?"Capsized - manual recovery needed":"Unavailable";b.portCommand=b.starboardCommand=0;return;
             }
             if(a.phase==Phase.Disabled)a.phase=a.onboard.Count>0?Phase.Returning:Phase.Idle;
+            if(PeopleRescued&&launch){launch.ReturnToBay(i,dt);return;}
             if(a.phase==Phase.Boarding){Board(i,dt);return;}
             if(a.phase==Phase.Unloading){Unload(i,dt);return;}
             if(a.phase==Phase.Complete){Drive(i,dockPoints[i],Vector3.zero,.025f);return;}
@@ -176,7 +184,7 @@ namespace RescueSim
             Drive(i,next,last?goalVelocity:Vector3.zero,speed);a.message=a.phase==Phase.Returning?"Returning to home dock":"Tracking collision-free path";
         }
         static float FlatSpeed(Vector3 v){v.y=0;return v.magnitude;}
-        void Drive(int i,Vector3 target,Vector3 targetVelocity,float speed)
+        public void Drive(int i,Vector3 target,Vector3 targetVelocity,float speed,Vector3? fixedHeading=null)
         {
             var b=fleet.dispatcher.boats[i];Vector3 error=target-b.Body.position;error.y=0;targetVelocity.y=0;
             Vector3 desired=Vector3.ClampMagnitude(error*1.3f,speed)+targetVelocity;
@@ -186,10 +194,11 @@ namespace RescueSim
             Vector3 force=b.Body.mass*1.8f*(desired-new Vector3(b.Body.linearVelocity.x,0,b.Body.linearVelocity.z))+b.transform.TransformDirection(dragLocal);force.y=0;
             Vector3 heading=error.magnitude>.05f?desired-b.water.VelocityAt(b.Body.position)*.6f:force;
             heading.y=0;
+            if(fixedHeading.HasValue)heading=fixedHeading.Value;
             float angle=heading.sqrMagnitude>1e-10f?Vector3.SignedAngle(b.transform.forward,heading,Vector3.up)*Mathf.Deg2Rad:0;
             // Allow reverse thrust for small holding corrections instead of
             // demanding a 180-degree turn at every stop.
-            if(error.magnitude<.06f&&Mathf.Abs(angle)>Mathf.PI/2)angle-=Mathf.Sign(angle)*Mathf.PI;
+            if(!fixedHeading.HasValue&&error.magnitude<.06f&&Mathf.Abs(angle)>Mathf.PI/2)angle-=Mathf.Sign(angle)*Mathf.PI;
             float rate=Mathf.Clamp(angle*1.8f,-.85f,.85f);
             float torque=b.profile.angularDrag.y*rate+.000018f*(rate-b.Body.angularVelocity.y);
             float total=Vector3.Dot(force,b.transform.forward);
@@ -229,7 +238,7 @@ namespace RescueSim
                 var visual=Instantiate(seatedPrefab);visual.name="Refuge_Person_"+person.personId.ToString("D2");visual.transform.position=destination;visual.transform.rotation=Quaternion.Euler(0,-(a.refugeSlot/6)*90,0);refugeVisuals.Add(visual);
             }
             rescued++;unloadingEvents++;a.transferTimer=0;
-            if(Complete)foreach(var agent in agents){agent.phase=Phase.Complete;agent.message="Mission complete";agent.path.Clear();}
+            if(PeopleRescued)foreach(var agent in agents){agent.phase=Phase.Complete;agent.message=launch?"Rescue complete - returning to bay":"Mission complete";agent.path.Clear();}
         }
         void LateUpdate()
         {

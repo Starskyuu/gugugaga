@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Rescue/Scenes/RescueControlRoom.unity
+    guid: 1e613a443cd6a3640ac8e306865ca9da
+  - enabled: 1
     path: Assets/Rescue/Scenes/AutonomousRescue.unity
     guid: 2568acf801ea8ad4b952ccb883df5fa8
-  - enabled: 1
-    path: Assets/Rescue/Scenes/FleetRescue.unity
-    guid: 840bd88c551a2ff4f8cdcc5f04a4cde8
   m_configObjects: {}

@@ -1,0 +1,21 @@
+{
+    "preset": 1,
+    "rescued": 24,
+    "allDeparted": true,
+    "heldUntilOpen": true,
+    "cameraValid": true,
+    "resetValid": true,
+    "seconds": 117.91070556640625,
+    "collisions": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "phases": [
+        "Returning (-0.0092, -0.0049, 0.2778)",
+        "Idle (0.2600, -0.0045, 0.0000)",
+        "Idle (-0.0126, -0.0045, -0.2609)",
+        "Returning (-0.2644, -0.0065, 0.0092)"
+    ]
+}

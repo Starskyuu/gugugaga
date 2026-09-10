@@ -1,0 +1,323 @@
+{
+    "runId": "20260910_014355_2aaa572e",
+    "createdUtc": "2026-09-10T01:43:55.8305581Z",
+    "engine": "6000.6.0f1",
+    "scenario": "Street",
+    "outcome": "InProgress",
+    "simulationSeconds": 260.8970947265625,
+    "completionSeconds": -1.0,
+    "successPercent": 100.0,
+    "total": 24,
+    "inWater": 0,
+    "onboard": 0,
+    "rescued": 24,
+    "plans": 799,
+    "recordedSamples": 1028,
+    "truncated": false,
+    "initialConfiguration": {
+        "waterLevelM": 0.0,
+        "backgroundSpeedMps": 0.00800000037997961,
+        "headingDegrees": 0.0,
+        "regionalStrength": 1.0,
+        "cruiseSpeedMps": 0.05000000074505806,
+        "regionalFlow": true,
+        "debris": true,
+        "available": [
+            true,
+            true,
+            true,
+            true
+        ]
+    },
+    "currentConfiguration": {
+        "waterLevelM": 0.0,
+        "backgroundSpeedMps": 0.00800000037997961,
+        "headingDegrees": 0.0,
+        "regionalStrength": 1.0,
+        "cruiseSpeedMps": 0.05000000074505806,
+        "regionalFlow": true,
+        "debris": true,
+        "available": [
+            true,
+            true,
+            true,
+            true
+        ]
+    },
+    "boats": [
+        {
+            "boat": 1,
+            "onboard": 0,
+            "reserved": 0,
+            "contacts": 12,
+            "state": "Docked",
+            "distanceM": 3.916064500808716,
+            "maxSpeedMps": 0.06336851418018341,
+            "maxTiltDegrees": 2.391301393508911,
+            "massKg": 0.012000000104308128,
+            "portRpm": 0.0,
+            "starboardRpm": 0.0,
+            "blockedSeconds": 0.0
+        },
+        {
+            "boat": 2,
+            "onboard": 0,
+            "reserved": 0,
+            "contacts": 10,
+            "state": "Docked",
+            "distanceM": 3.394977331161499,
+            "maxSpeedMps": 0.058037418872117996,
+            "maxTiltDegrees": 2.387697458267212,
+            "massKg": 0.012000000104308128,
+            "portRpm": 0.0,
+            "starboardRpm": 0.0,
+            "blockedSeconds": 5.25001335144043
+        },
+        {
+            "boat": 3,
+            "onboard": 0,
+            "reserved": 0,
+            "contacts": 4,
+            "state": "Aligning",
+            "distanceM": 5.503805637359619,
+            "maxSpeedMps": 0.05510834977030754,
+            "maxTiltDegrees": 2.401021718978882,
+            "massKg": 0.012000000104308128,
+            "portRpm": -2593.51513671875,
+            "starboardRpm": 2478.2109375,
+            "blockedSeconds": 2.466665029525757
+        },
+        {
+            "boat": 4,
+            "onboard": 0,
+            "reserved": 0,
+            "contacts": 9,
+            "state": "Docked",
+            "distanceM": 3.765805959701538,
+            "maxSpeedMps": 0.06009232997894287,
+            "maxTiltDegrees": 2.3964524269104004,
+            "massKg": 0.012000000104308128,
+            "portRpm": 0.0,
+            "starboardRpm": 0.0,
+            "blockedSeconds": 4.60000467300415
+        }
+    ],
+    "people": [
+        {
+            "person": 1,
+            "urgency": 2,
+            "carrier": 1,
+            "state": "Rescued",
+            "boardedAt": 12.816642761230469,
+            "rescuedAt": 79.7192153930664,
+            "waitingSeconds": 12.79963207244873
+        },
+        {
+            "person": 2,
+            "urgency": 0,
+            "carrier": 1,
+            "state": "Rescued",
+            "boardedAt": 22.133167266845703,
+            "rescuedAt": 77.28536224365234,
+            "waitingSeconds": 22.114025115966797
+        },
+        {
+            "person": 3,
+            "urgency": 1,
+            "carrier": 1,
+            "state": "Rescued",
+            "boardedAt": 16.833248138427734,
+            "rescuedAt": 78.50228881835938,
+            "waitingSeconds": 16.815319061279297
+        },
+        {
+            "person": 4,
+            "urgency": 0,
+            "carrier": 2,
+            "state": "Rescued",
+            "boardedAt": 47.39944839477539,
+            "rescuedAt": 98.88997650146484,
+            "waitingSeconds": 47.3745231628418
+        },
+        {
+            "person": 5,
+            "urgency": 0,
+            "carrier": 4,
+            "state": "Rescued",
+            "boardedAt": 90.72156524658203,
+            "rescuedAt": 110.9258804321289,
+            "waitingSeconds": 90.7783432006836
+        },
+        {
+            "person": 6,
+            "urgency": 0,
+            "carrier": 1,
+            "state": "Rescued",
+            "boardedAt": 30.03304672241211,
+            "rescuedAt": 76.06843566894531,
+            "waitingSeconds": 30.012096405029297
+        },
+        {
+            "person": 7,
+            "urgency": 2,
+            "carrier": 2,
+            "state": "Rescued",
+            "boardedAt": 13.583297729492188,
+            "rescuedAt": 103.75768280029297,
+            "waitingSeconds": 13.56611156463623
+        },
+        {
+            "person": 8,
+            "urgency": 0,
+            "carrier": 3,
+            "state": "Rescued",
+            "boardedAt": 52.24937438964844,
+            "rescuedAt": 86.05390167236328,
+            "waitingSeconds": 52.22333908081055
+        },
+        {
+            "person": 9,
+            "urgency": 1,
+            "carrier": 2,
+            "state": "Rescued",
+            "boardedAt": 17.199909210205078,
+            "rescuedAt": 102.54075622558594,
+            "waitingSeconds": 17.181896209716797
+        },
+        {
+            "person": 10,
+            "urgency": 0,
+            "carrier": 2,
+            "state": "Rescued",
+            "boardedAt": 28.133075714111328,
+            "rescuedAt": 100.10690307617188,
+            "waitingSeconds": 28.112560272216797
+        },
+        {
+            "person": 11,
+            "urgency": 0,
+            "carrier": 3,
+            "state": "Rescued",
+            "boardedAt": 63.28253936767578,
+            "rescuedAt": 84.83697509765625,
+            "waitingSeconds": 63.25397872924805
+        },
+        {
+            "person": 12,
+            "urgency": 0,
+            "carrier": 2,
+            "state": "Rescued",
+            "boardedAt": 24.383132934570313,
+            "rescuedAt": 101.3238296508789,
+            "waitingSeconds": 24.363475799560547
+        },
+        {
+            "person": 13,
+            "urgency": 2,
+            "carrier": 3,
+            "state": "Rescued",
+            "boardedAt": 11.949989318847656,
+            "rescuedAt": 90.9216079711914,
+            "waitingSeconds": 11.93317699432373
+        },
+        {
+            "person": 14,
+            "urgency": 0,
+            "carrier": 4,
+            "state": "Rescued",
+            "boardedAt": 43.74950408935547,
+            "rescuedAt": 113.35973358154297,
+            "waitingSeconds": 43.72541427612305
+        },
+        {
+            "person": 15,
+            "urgency": 1,
+            "carrier": 3,
+            "state": "Rescued",
+            "boardedAt": 15.299938201904297,
+            "rescuedAt": 89.70468139648438,
+            "waitingSeconds": 15.28235912322998
+        },
+        {
+            "person": 16,
+            "urgency": 0,
+            "carrier": 3,
+            "state": "Rescued",
+            "boardedAt": 20.88318634033203,
+            "rescuedAt": 88.48775482177734,
+            "waitingSeconds": 20.864330291748047
+        },
+        {
+            "person": 17,
+            "urgency": 0,
+            "carrier": 4,
+            "state": "Rescued",
+            "boardedAt": 50.349403381347656,
+            "rescuedAt": 112.14280700683594,
+            "waitingSeconds": 50.32380294799805
+        },
+        {
+            "person": 18,
+            "urgency": 0,
+            "carrier": 3,
+            "state": "Rescued",
+            "boardedAt": 24.84979248046875,
+            "rescuedAt": 87.27082824707031,
+            "waitingSeconds": 24.830028533935547
+        },
+        {
+            "person": 19,
+            "urgency": 2,
+            "carrier": 4,
+            "state": "Rescued",
+            "boardedAt": 10.533344268798828,
+            "rescuedAt": 117.01051330566406,
+            "waitingSeconds": 10.51685619354248
+        },
+        {
+            "person": 20,
+            "urgency": 0,
+            "carrier": 1,
+            "state": "Rescued",
+            "boardedAt": 48.66609573364258,
+            "rescuedAt": 74.85150909423828,
+            "waitingSeconds": 48.6408805847168
+        },
+        {
+            "person": 21,
+            "urgency": 1,
+            "carrier": 4,
+            "state": "Rescued",
+            "boardedAt": 14.966609954833984,
+            "rescuedAt": 115.79358673095703,
+            "waitingSeconds": 14.94910717010498
+        },
+        {
+            "person": 22,
+            "urgency": 0,
+            "carrier": 4,
+            "state": "Rescued",
+            "boardedAt": 19.916534423828125,
+            "rescuedAt": 114.57666015625,
+            "waitingSeconds": 19.897899627685547
+        },
+        {
+            "person": 23,
+            "urgency": 0,
+            "carrier": 1,
+            "state": "Rescued",
+            "boardedAt": 57.132633209228516,
+            "rescuedAt": 73.63458251953125,
+            "waitingSeconds": 57.1054801940918
+        },
+        {
+            "person": 24,
+            "urgency": 0,
+            "carrier": 1,
+            "state": "Rescued",
+            "boardedAt": 95.83932495117188,
+            "rescuedAt": 113.09300994873047,
+            "waitingSeconds": 95.9124984741211
+        }
+    ]
+}

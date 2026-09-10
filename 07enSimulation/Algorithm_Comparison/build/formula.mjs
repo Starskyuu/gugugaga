@@ -1,0 +1,23 @@
+import fs from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+import {Presentation,PresentationFile} from '@oai/artifact-tool';
+const root='F:/gugugaga/07enSimulation/Algorithm_Comparison';
+const skill='C:/Users/Lenovo/.codex/plugins/cache/openai-primary-runtime/presentations/26.905.11957/skills/presentations';
+const font='Microsoft YaHei';
+const p=Presentation.create({slideSize:{width:1280,height:720}});
+const s=p.slides.add();s.background.fill='#F6F9FA';
+function text(t,x,y,w,h,size=28,color='#172F3D',bold=false){const b=s.shapes.add({geometry:'textbox',position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});b.text=t;b.text.style={typeface:font,fontSize:size,color,bold,autoFit:'none'};}
+text('传统 A* 与改进 A*：公式对比',64,44,1152,72,44,'#172F3D',true);
+text('传统 A*（距离代价）',64,153,1152,44,29,'#536A76',true);
+text('f(n) = g(n) + h(n)       g(n) = Σ Δsᵢ',64,209,1152,65,40,'#172F3D',true);
+text('改进 A*（加入逆流惩罚）',64,311,1152,44,29,'#007F80',true);
+text('f′(n) = g′(n) + h(n)',64,368,1152,59,40,'#007F80',true);
+text('g′(n) = Σ Δsᵢ × [1 + max(0, −vᵢ · dᵢ) / v₀]',64,427,1152,64,38,'#007F80',true);
+text('Δsᵢ：每段距离    vᵢ：当地流速    dᵢ：行驶方向单位向量\nv₀ = 0.04 m/s：惩罚尺度    h(n)：到终点的欧氏距离（保持不变）',64,526,1152,84,24,'#536A76');
+text('变化：累计代价增加逆流惩罚。避障通过通行约束与在线重规划实现。',64,639,1152,43,26,'#007F80',true);
+s.speakerNotes.textFrame.setText('公式对应当前项目 F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueNavigation.cs 的 Plan 方法。求和范围为起点到当前节点 n 的路径边，d_i 是每段行驶方向单位向量。边代价为 step.magnitude*(1+Max(0,-Dot(flow,step.normalized))/.04f)。逆流提高代价，顺流不额外奖励。g 和 g′ 分别表示搜索过程中已知的最小累计距离代价和流场加权代价。两种形式都保留 f=g+h 框架和欧氏距离启发式。这里的传统基线选用距离代价，A* 本身也允许其他代价函数。船体占用、水深、其他船和漂浮物约束在 Walkable 等函数中处理，不是额外虚构的公式惩罚项。RescueMission.cs 的 Navigate 约每1.2秒或路径为空时重新规划。传统 A* 能绕开已知障碍，图中公式并不意味着传统 A* 不具备避障能力。流场加权距离不是实际能耗或航行时间。A* 原始文献：Hart, Nilsson, Raphael (1968), https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/astar.pdf 。');
+const candidate=root+'/build/formula-candidate.pptx';
+await (await PresentationFile.exportPptx(p)).save(candidate);
+const {finalizePresentation}=await import(pathToFileURL(skill+'/container_tools/artifact_tool_utils.mjs').href);
+await finalizePresentation({workspaceDir:root,candidatePath:candidate,finalPath:root+'/output/AStar_Formula_Comparison.pptx',explicitTotalSlideCount:1,pythonExecutable:'C:/Users/Lenovo/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe',integrityValidatorPath:skill+'/container_tools/inspect_presentation_package_integrity.py',layoutValidatorPath:skill+'/container_tools/inspect_presentation_layout_geometry.py',layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-heading-fit'],fontPolicy:{basis:'design',families:[font]},verifyArtifactToolImport:true,receiptPath:root+'/build/formula-validation.json'});
+const png=await p.export({slide:s,format:'png',scale:1});await fs.writeFile(root+'/output/AStar_Formula_Comparison.png',new Uint8Array(await png.arrayBuffer()));

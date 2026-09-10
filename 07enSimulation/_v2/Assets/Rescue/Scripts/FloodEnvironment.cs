@@ -9,6 +9,8 @@ namespace RescueSim
         public FloatingDebris[] debris;public Camera overview,follow;
         public Vector3 start=new Vector3(0,-.00456848f,-.40f);
         public FleetScenario fleet;
+        public RescueDashboard dashboard;
+        public bool KeyboardControl {get=>keyboard;set=>keyboard=value;}
         Vector3[] debrisStart;bool close,keyboard=true;float heading=0,speed=.008f;Vector2 scroll;
         void Awake(){debrisStart=new Vector3[debris.Length];for(int i=0;i<debris.Length;i++)debrisStart[i]=debris[i].transform.position;}
         public void SetLevel(float y){water.level=y;RefreshMarkers();}
@@ -24,6 +26,7 @@ namespace RescueSim
         {
             if(fleet)fleet.ResetFleet();else boat.ResetState(new Vector3(start.x,water.level-.00456848f,start.z),Quaternion.identity);
             for(int i=0;i<debris.Length;i++)debris[i].ResetAt(new Vector3(debrisStart[i].x,water.level+.004f,debrisStart[i].z));
+            if(dashboard)dashboard.telemetry.BeginRun();
         }
         public void SetDebris(bool enabled){foreach(var d in debris)d.gameObject.SetActive(enabled);}
         public void UseSliders(){keyboard=false;}
@@ -65,6 +68,7 @@ namespace RescueSim
         }
         void OnGUI()
         {
+            if(dashboard)return;
             float scale=Mathf.Max(.6f,Screen.height/900f);GUI.matrix=Matrix4x4.Scale(Vector3.one*scale);
             GUILayout.BeginArea(new Rect(16,16,300,Screen.height/scale-32),GUI.skin.box);
             scroll=GUILayout.BeginScrollView(scroll);

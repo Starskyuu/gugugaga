@@ -2,6 +2,7 @@
 .workbuddy/
 .tmp_final_render/
 .tmp_source_render/
+tmp/
 
 # Python caches and environments
 __pycache__/

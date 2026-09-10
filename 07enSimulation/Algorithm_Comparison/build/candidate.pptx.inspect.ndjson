@@ -1,0 +1,79 @@
+{"kind":"deck","id":"pr/ndds4d","name":"Deck"}
+{"kind":"layout","layoutId":"4d242b3c-eca7-473a-b237-03489053e211","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"6c887989-3a27-4212-97ce-cab152edb4a7","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/znfh0b","slide":1,"title":"ALGORITHM COMPARISON","textShapes":7}
+{"kind":"textbox","id":"sh/65ov6907","slide":1,"text":"ALGORITHM COMPARISON","textPreview":"ALGORITHM COMPARISON","textChars":20,"textLines":1,"bbox":[64,28,1120,30]}
+{"kind":"textbox","id":"sh/t8fe1ojy","slide":1,"text":"面向洪水救援的\nA* 路径规划改进","textPreview":"面向洪水救援的 | A* 路径规划改进","textChars":17,"textLines":2,"bbox":[64,150,680,140]}
+{"kind":"textbox","id":"sh/876d8jid","slide":1,"text":"城市方舟  /  救援船路径规划","textPreview":"城市方舟  /  救援船路径规划","textChars":16,"textLines":1,"bbox":[64,674,1000,24]}
+{"kind":"textbox","id":"sh/vaxw3e1o","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1170,674,48,24]}
+{"kind":"textbox","id":"sh/u9ova903","slide":1,"text":"传统静态基线 × 当前 Unity 实现","textPreview":"传统静态基线 × 当前 Unity 实现","textChars":20,"textLines":1,"bbox":[64,326,700,50]}
+{"kind":"textbox","id":"sh/hcze5ozu","slide":1,"text":"不仅寻找短路，\n还要判断船能否安全通过。","textPreview":"不仅寻找短路， | 还要判断船能否安全通过。","textChars":20,"textLines":2,"bbox":[64,404,620,110]}
+{"kind":"textbox","id":"sh/gbqdcji9","slide":1,"text":"船体约束 · 水深检查 · 逆流代价 · 在线重规划","textPreview":"船体约束 · 水深检查 · 逆流代价 · 在线重规划","textChars":26,"textLines":1,"bbox":[64,566,1152,45]}
+{"kind":"image","id":"im/6p47y9ov","slide":1,"name":"","alt":"项目中的黄色绿色无人救援船模型","bbox":[750,140,460,405]}
+{"kind":"notes","id":"nt/znfh0b","slide":1,"text":"本演示基于当前 Unity 项目源码核对。对比对象是采用距离代价、仅初始规划一次的传统 A* 静态基线，不是宣称所有 A* 系统都缺少动态避障。我们的工作属于面向救援船的工程化扩展，未提出新的启发式函数。代码来源：F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueNavigation.cs；F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueMission.cs。模型图来自项目 Reports/Model_Previews/RescueBoat.png。"}
+{"kind":"slide","id":"sl/d3u8vi","slide":2,"title":"01  /  基础原理","textShapes":10}
+{"kind":"textbox","id":"sh/pcbyd0na","slide":2,"text":"01  /  基础原理","textPreview":"01  /  基础原理","textChars":11,"textLines":1,"bbox":[64,28,1120,30]}
+{"kind":"textbox","id":"sh/290z254j","slide":2,"text":"A*：用“已走代价 + 剩余估计”寻找路径","textPreview":"A*：用“已走代价 + 剩余估计”寻找路径","textChars":21,"textLines":1,"bbox":[64,72,1152,66]}
+{"kind":"textbox","id":"sh/na9gba54","slide":2,"text":"城市方舟  /  救援船路径规划","textPreview":"城市方舟  /  救援船路径规划","textChars":16,"textLines":1,"bbox":[64,674,1000,24]}
+{"kind":"textbox","id":"sh/0nih0vmd","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1170,674,48,24]}
+{"kind":"textbox","id":"sh/18ry90ny","slide":2,"text":"f(n) = g(n) + h(n)","textPreview":"f(n) = g(n) + h(n)","textChars":18,"textLines":1,"bbox":[64,172,1152,86]}
+{"kind":"textbox","id":"sh/el0zyl47","slide":2,"text":"g(n)  从起点到当前节点的累计代价","textPreview":"g(n)  从起点到当前节点的累计代价","textChars":19,"textLines":1,"bbox":[64,286,1130,48]}
+{"kind":"textbox","id":"sh/fm9g7q5s","slide":2,"text":"h(n)  当前节点到终点的估计代价","textPreview":"h(n)  当前节点到终点的估计代价","textChars":18,"textLines":1,"bbox":[64,346,1130,48]}
+{"kind":"textbox","id":"sh/sjyhwbmh","slide":2,"text":"搜索过程","textPreview":"搜索过程","textChars":4,"textLines":1,"bbox":[64,432,240,42]}
+{"kind":"textbox","id":"sh/dkry5gn2","slide":2,"text":"① 选择 f 最小的节点     ② 检查可通行邻居\n③ 更新代价与父节点     ④ 到达终点后回溯路径","textPreview":"① 选择 f 最小的节点     ② 检查可通行邻居 | ③ 更新代价与父节点     ④ 到达终点后回溯路径","textChars":53,"textLines":2,"bbox":[64,488,1152,98]}
+{"kind":"textbox","id":"sh/lcf21kbi","slide":2,"text":"关键澄清：传统 A* 本来就能绕开地图中已知、被标记为不可通行的障碍。","textPreview":"关键澄清：传统 A* 本来就能绕开地图中已知、被标记为不可通行的障碍。","textChars":35,"textLines":1,"bbox":[64,613,1152,40]}
+{"kind":"notes","id":"nt/d3u8vi","slide":2,"text":"A* 是启发式图搜索算法。g 表示已累计的路径代价，h 估计剩余代价，每轮优先扩展 f=g+h 最小的候选节点。适当的启发式和搜索条件下可得到图上的最小代价路径，但不等于真实船舶的全局最优运动轨迹。当前实现采用八邻域栅格、平面欧氏距离启发式，并禁止对角穿越障碍角点。原始文献：Hart, Nilsson, Raphael (1968), A Formal Basis for the Heuristic Determination of Minimum Cost Paths, https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/astar.pdf 。实现来源：F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueNavigation.cs，Plan、FlatDistance。"}
+{"kind":"slide","id":"sl/rxaatw","slide":3,"title":"02  /  核心对比","textShapes":5}
+{"kind":"textbox","id":"sh/hg7etcfu","slide":3,"text":"02  /  核心对比","textPreview":"02  /  核心对比","textChars":11,"textLines":1,"bbox":[64,28,1120,30]}
+{"kind":"textbox","id":"sh/udgvixw3","slide":3,"text":"保留 A* 搜索框架，扩展船舶场景约束","textPreview":"保留 A* 搜索框架，扩展船舶场景约束","textChars":19,"textLines":1,"bbox":[64,72,1152,66]}
+{"kind":"textbox","id":"sh/vepwr2xo","slide":3,"text":"城市方舟  /  救援船路径规划","textPreview":"城市方舟  /  救援船路径规划","textChars":16,"textLines":1,"bbox":[64,674,1000,24]}
+{"kind":"textbox","id":"sh/8bydgnex","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1170,674,48,24]}
+{"kind":"textbox","id":"sh/mpwvedw7","slide":3,"text":"没有更换：f = g + h；h 仍是平面欧氏距离。","textPreview":"没有更换：f = g + h；h 仍是平面欧氏距离。","textChars":26,"textLines":1,"bbox":[64,603,1152,40]}
+{"kind":"table","id":"tb/47ih472t","slide":3,"name":"","rows":6,"cols":3,"preview":"比较维度 | 传统静态 A* 基线 | 当前项目实现","bbox":[64,171,1152,408]}
+{"kind":"notes","id":"nt/rxaatw","slide":3,"text":"表中的传统基线是为了进行实验而明确约定的配置，并非 A* 的能力上限。传统 A* 也可通过地图更新和重复搜索实现动态避障。当前实现额外处理船舶安全占用、水深、逆流成本和当前动态障碍。clearance=0.048m 是静态碰撞检测的水平半宽，并不等价于沿所有船壳点都严格保持 48mm 的净距；其他船中心距离小于 0.096m 时屏蔽节点。源码：F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueNavigation.cs（Rebuild、Walkable、DynamicWalkable、Plan、ClearLine）；F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueMission.cs（Navigate，planTimer=1.2f）。"}
+{"kind":"slide","id":"sl/v39d1d","slide":4,"title":"03  /  绕障机制示意","textShapes":8}
+{"kind":"textbox","id":"sh/vil87mlk","slide":4,"text":"03  /  绕障机制示意","textPreview":"03  /  绕障机制示意","textChars":13,"textLines":1,"bbox":[64,28,1120,30]}
+{"kind":"textbox","id":"sh/wjup0rm5","slide":4,"text":"新障碍出现后，旧路线需要重新计算","textPreview":"新障碍出现后，旧路线需要重新计算","textChars":16,"textLines":1,"bbox":[64,72,1152,66]}
+{"kind":"textbox","id":"sh/xk3q9w3q","slide":4,"text":"城市方舟  /  救援船路径规划","textPreview":"城市方舟  /  救援船路径规划","textChars":16,"textLines":1,"bbox":[64,674,1000,24]}
+{"kind":"textbox","id":"sh/mts7uh43","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1170,674,48,24]}
+{"kind":"textbox","id":"sh/nu1o3mlo","slide":4,"text":"静态、单次规划：旧路线不更新","textPreview":"静态、单次规划：旧路线不更新","textChars":14,"textLines":1,"bbox":[64,153,552,40]}
+{"kind":"textbox","id":"sh/ovapwrmt","slide":4,"text":"当前方案：按更新后的障碍绕行","textPreview":"当前方案：按更新后的障碍绕行","textChars":14,"textLines":1,"bbox":[666,153,550,40]}
+{"kind":"textbox","id":"sh/eps7qx4r","slide":4,"text":"灰虚线：旧路线    青线：更新路线    橙色：新增漂浮物","textPreview":"灰虚线：旧路线    青线：更新路线    橙色：新增漂浮物","textChars":30,"textLines":1,"bbox":[64,613,1152,32]}
+{"kind":"textbox","id":"sh/zq1oz2lc","slide":4,"text":"机制示意图，非仿真实测轨迹；对比的是“是否更新并重规划”。","textPreview":"机制示意图，非仿真实测轨迹；对比的是“是否更新并重规划”。","textChars":29,"textLines":1,"bbox":[64,647,1152,25]}
+{"kind":"image","id":"im/sn6xov29","slide":4,"name":"","alt":"左右相同地图：旧路线遇到新增漂浮物，重规划路线绕开漂浮物；两种路线都避开已知建筑","bbox":[115,198,1050,423]}
+{"kind":"notes","id":"nt/v39d1d","slide":4,"text":"本页为 AI 生成的机制示意图，不是实测轨迹或 Unity 截图，曲线形状不代表源码中的实际折线路径。两侧地图和原始路线一致，且原始路线本来就绕过已知建筑。左侧特意定义为不重新规划的静态基线，所以新增漂浮物进入原航线后旧路线仍会与其相交；右侧更新不可通行节点并重新运行 A*，路径因此绕行。不能从图中推断原始 A* 不会避障。如果传统 A* 同样更新地图并重规划，也可以绕开新增障碍。当前动态障碍依据当前位置进行检查，不对漂浮物做时空轨迹预测。"}
+{"kind":"slide","id":"sl/cv4fgp","slide":5,"title":"04  /  对应当前代码","textShapes":11}
+{"kind":"textbox","id":"sh/yxkb61ov","slide":5,"text":"04  /  对应当前代码","textPreview":"04  /  对应当前代码","textChars":13,"textLines":1,"bbox":[64,28,1120,30]}
+{"kind":"textbox","id":"sh/l0vu1gnm","slide":5,"text":"改进的具体内容：可通行判断与逆流代价","textPreview":"改进的具体内容：可通行判断与逆流代价","textChars":18,"textLines":1,"bbox":[64,72,1152,66]}
+{"kind":"textbox","id":"sh/0zmt8b61","slide":5,"text":"城市方舟  /  救援船路径规划","textPreview":"城市方舟  /  救援船路径规划","textChars":16,"textLines":1,"bbox":[64,674,1000,24]}
+{"kind":"textbox","id":"sh/nmdc365c","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1170,674,48,24]}
+{"kind":"textbox","id":"sh/m14ba1o7","slide":5,"text":"① 先判断：这段水域是否允许船通过","textPreview":"① 先判断：这段水域是否允许船通过","textChars":17,"textLines":1,"bbox":[64,165,1152,45]}
+{"kind":"textbox","id":"sh/9ovu5gni","slide":5,"text":"静态安全检测半宽 48 mm；船间中心排斥距离 96 mm。\n在中心及四周检测水深：水深 ≥ max(8 mm，吃水 + 1.8 mm)。","textPreview":"静态安全检测半宽 48 mm；船间中心排斥距离 96 mm。 | 在中心及四周检测水深：水深 ≥ max(8 mm，吃水 + 1.8 mm)。","textChars":69,"textLines":2,"bbox":[64,222,1152,105]}
+{"kind":"textbox","id":"sh/8nmtcb6x","slide":5,"text":"② 再比较：相邻节点之间哪条路线代价更低","textPreview":"② 再比较：相邻节点之间哪条路线代价更低","textChars":20,"textLines":1,"bbox":[64,348,1152,45]}
+{"kind":"textbox","id":"sh/369srmp8","slide":5,"text":"c(i,j) = Δs × [1 + max(0, −v · d) / 0.04]","textPreview":"c(i,j) = Δs × [1 + max(0, −v · d) / 0.04]","textChars":41,"textLines":1,"bbox":[64,413,1152,65]}
+{"kind":"textbox","id":"sh/250byhon","slide":5,"text":"Δs：节点间距    v：当地流速（m/s）    d：行驶方向单位向量","textPreview":"Δs：节点间距    v：当地流速（m/s）    d：行驶方向单位向量","textChars":36,"textLines":1,"bbox":[64,492,1152,43]}
+{"kind":"textbox","id":"sh/g7mh0vqd","slide":5,"text":"逆流越强，代价越大；顺流不额外奖励。h 仍使用欧氏距离。","textPreview":"逆流越强，代价越大；顺流不额外奖励。h 仍使用欧氏距离。","textChars":28,"textLines":1,"bbox":[64,553,1152,43]}
+{"kind":"textbox","id":"sh/h8vytg7i","slide":5,"text":"注意：这是流场加权距离，不是直接计算的能耗或到达时间。","textPreview":"注意：这是流场加权距离，不是直接计算的能耗或到达时间。","textChars":27,"textLines":1,"bbox":[64,618,1152,37]}
+{"kind":"notes","id":"nt/cv4fgp","slide":5,"text":"源码逐项对应：Rebuild 使用水平半宽 clearance=.048m 的 OverlapBox 处理静态碰撞；DynamicWalkable 使用 .096m 船中心间距及漂浮物尺寸判断。水深检查涉及中心、正负 x 和正负 z 五个采样点，最低深度为 max(.008, Draft+.0018)，且需要 HasWater。Plan 中代价为 step.magnitude*(1+Max(0,-Dot(flow,step.normalized))/.04)。分母单位 m/s。此代价并非实际功耗模型，不应称作节能最优。示例：逆流方向分量 .02m/s 时系数为1.5，仅为公式演算。尺寸全部为模型尺度，不是实际救援船尺度。静态检测是保守占用近似，可能排除实际可通过的狭窄区域。来源：F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueNavigation.cs。"}
+{"kind":"slide","id":"sl/9dcnqb","slide":6,"title":"05  /  Unity 仿真实现","textShapes":9}
+{"kind":"textbox","id":"sh/bq50bmxc","slide":6,"text":"05  /  Unity 仿真实现","textPreview":"05  /  Unity 仿真实现","textChars":17,"textLines":1,"bbox":[64,28,1120,30]}
+{"kind":"textbox","id":"sh/cry14rex","slide":6,"text":"路径规划与物理航行，是两层不同的计算","textPreview":"路径规划与物理航行，是两层不同的计算","textChars":18,"textLines":1,"bbox":[64,72,1152,66]}
+{"kind":"textbox","id":"sh/xc7idwfi","slide":6,"text":"城市方舟  /  救援船路径规划","textPreview":"城市方舟  /  救援船路径规划","textChars":16,"textLines":1,"bbox":[64,674,1000,24]}
+{"kind":"textbox","id":"sh/ydgj61w3","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1170,674,48,24]}
+{"kind":"textbox","id":"sh/kfy18be9","slide":6,"text":"规划层","textPreview":"规划层","textChars":3,"textLines":1,"bbox":[824,172,370,42]}
+{"kind":"textbox","id":"sh/lg7ihgfu","slide":6,"text":"读取水域与障碍\n运行 A* 并压缩路径\n约每 1.2 秒重新规划","textPreview":"读取水域与障碍 | 运行 A* 并压缩路径 | 约每 1.2 秒重新规划","textChars":32,"textLines":3,"bbox":[824,229,386,142]}
+{"kind":"textbox","id":"sh/mhgjalwz","slide":6,"text":"运动与避让层","textPreview":"运动与避让层","textChars":6,"textLines":1,"bbox":[824,396,390,42]}
+{"kind":"textbox","id":"sh/7i9kj6dk","slide":6,"text":"跟踪航点、差速推进\n短时船间冲突检查\n受水流、阻力和碰撞影响","textPreview":"跟踪航点、差速推进 | 短时船间冲突检查 | 受水流、阻力和碰撞影响","textChars":30,"textLines":3,"bbox":[824,453,386,142]}
+{"kind":"textbox","id":"sh/3ytwzat8","slide":6,"text":"显示的规划线 ≠ 未来真实航迹；实际航迹应单独记录并验证。","textPreview":"显示的规划线 ≠ 未来真实航迹；实际航迹应单独记录并验证。","textChars":29,"textLines":1,"bbox":[64,625,1152,39]}
+{"kind":"image","id":"im/ql0zixwb","slide":6,"name":"","alt":"Unity 救援场景现有运行截图：中心基地、四艘救援船、建筑与水面目标","bbox":[64,170,718,449]}
+{"kind":"notes","id":"nt/9dcnqb","slide":6,"text":"左图为项目已有运行截图，仅用于说明场景，不作为 A/B 性能证据。来源：Reports/Runtime_Mission_Outbound.png。RescueMission.Navigate 负责航点跟踪与定时重规划；Drive 将控制转换为双推进器控制，物理响应受到水流和阻力等影响。控制层按当前相对位置/速度估计至多1.5秒的船间接近情况，并采用编号优先的避让；这不意味着 A* 已扩展为时空搜索，也不是对漂浮物进行未来轨迹预测。LineRenderer 显示的是规划路径，不是通过动力学前向积分得到的预测轨迹。来源：F:/gugugaga/07enSimulation/_v2/Assets/Rescue/Scripts/RescueMission.cs。"}
+{"kind":"slide","id":"sl/8my7qn","slide":7,"title":"06  /  验证方案与结论","textShapes":7}
+{"kind":"textbox","id":"sh/65ofuh4z","slide":7,"text":"06  /  验证方案与结论","textPreview":"06  /  验证方案与结论","textChars":14,"textLines":1,"bbox":[64,28,1120,30]}
+{"kind":"textbox","id":"sh/t8fy5c3q","slide":7,"text":"如何证明改进有效：同条件 A/B 对照实验","textPreview":"如何证明改进有效：同条件 A/B 对照实验","textChars":21,"textLines":1,"bbox":[64,72,1152,66]}
+{"kind":"textbox","id":"sh/s76hw7m5","slide":7,"text":"城市方舟  /  救援船路径规划","textPreview":"城市方舟  /  救援船路径规划","textChars":16,"textLines":1,"bbox":[64,674,1000,24]}
+{"kind":"textbox","id":"sh/j2dgz2lo","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1170,674,48,24]}
+{"kind":"textbox","id":"sh/54fy1c3e","slide":7,"text":"控制变量：相同地图、起终点、流场、任务和推进控制器。","textPreview":"控制变量：相同地图、起终点、流场、任务和推进控制器。","textChars":26,"textLines":1,"bbox":[64,522,1152,39]}
+{"kind":"textbox","id":"sh/k3mxs7mt","slide":7,"text":"当前结论：实现了“船舶约束 + 流场代价 + 在线重规划”的 A* 系统。","textPreview":"当前结论：实现了“船舶约束 + 流场代价 + 在线重规划”的 A* 系统。","textChars":37,"textLines":1,"bbox":[64,576,1152,44]}
+{"kind":"textbox","id":"sh/3yhgb6ls","slide":7,"text":"已核实功能差异；尚无同条件 A/B 统计，不宣称提升百分比或全局最优。","textPreview":"已核实功能差异；尚无同条件 A/B 统计，不宣称提升百分比或全局最优。","textChars":35,"textLines":1,"bbox":[64,631,1152,33]}
+{"kind":"table","id":"tb/rmdwnyxc","slide":7,"name":"","rows":5,"cols":3,"preview":"测试场景 | 重点验证 | 建议记录指标","bbox":[64,166,1152,332]}
+{"kind":"notes","id":"nt/8my7qn","slide":7,"text":"本页是待开展的实验设计，不是已完成的实验结果。对照需统一场景、种子、初始船位、救援目标、推进器控制和水流。静态基线定义为只初始规划一次；为了区分在线重规划与代价扩展各自的贡献，建议增加第二个对照：同频率重规划的距离代价 A*；再分别去掉水深、流场和船体约束做消融。记录多个随机种子和重复试验，报告分布和失败情况，而不仅是成功演示。原始A*可在满足条件时求图上最小代价路径，但本系统仍有栅格分辨率、保守占用、动力学跟踪误差以及缺少漂浮物未来预测等限制，不能直接推导真实物理条件下全局最优或现实救援安全保证。"}

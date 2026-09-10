@@ -10,6 +10,7 @@ namespace RescueSim
         [Range(1,32)] public int substeps=16;
         public bool paused;
         public RescueMission mission;
+        public MissionTelemetry telemetry;
         SimulationMode previous;
         void OnEnable(){previous=Physics.simulationMode;Physics.simulationMode=SimulationMode.Script;Time.fixedDeltaTime=1f/60f;}
         void OnDisable(){Physics.simulationMode=previous;}
@@ -25,6 +26,7 @@ namespace RescueSim
                 foreach(var person in victims)if(person && person.isActiveAndEnabled)person.ApplyForces(dt);
                 Physics.Simulate(dt);
             }
+            if(telemetry)telemetry.Sample(Time.fixedDeltaTime);
         }
     }
 }

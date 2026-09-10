@@ -1,0 +1,16 @@
+{
+    "preset": 0,
+    "rescued": 4,
+    "allDeparted": false,
+    "heldUntilOpen": true,
+    "cameraValid": true,
+    "resetValid": false,
+    "seconds": 60.01592254638672,
+    "collisions": [],
+    "phases": [
+        "Returning (-0.3105, -0.0065, 0.0755)",
+        "Outbound (0.1304, -0.0049, 0.5607)",
+        "Returning (0.1875, -0.0065, -0.1864)",
+        "Outbound (-0.2385, -0.0062, -0.0058)"
+    ]
+}

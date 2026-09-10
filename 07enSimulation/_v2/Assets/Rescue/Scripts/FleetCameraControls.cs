@@ -32,21 +32,29 @@ namespace RescueSim
         public void Pan(Vector2 from,Vector2 to)
         {
             Detach();var c=environment.overview;
-            Vector3 shift=Ground(c,from)-Ground(c,to);c.transform.position+=shift;pivot+=shift;
+            float units=2*c.orthographicSize/Mathf.Max(1,c.pixelHeight);
+            Vector2 delta=from-to;
+            Vector3 shift=(c.transform.right*delta.x+c.transform.up*delta.y)*units;
+            c.transform.position+=shift;pivot+=shift;
         }
         public void Orbit(Vector2 pixels)
         {
             Detach();var c=environment.overview;
             float distance=Vector3.Distance(c.transform.position,pivot);
             float pitch=c.transform.eulerAngles.x;if(pitch>180)pitch-=360;
-            Quaternion rotation=Quaternion.Euler(Mathf.Clamp(pitch-pixels.y*.25f,15,85),c.transform.eulerAngles.y+pixels.x*.25f,0);
+            Quaternion rotation=Quaternion.Euler(Mathf.Clamp(pitch-pixels.y*.25f,-89,89),c.transform.eulerAngles.y+pixels.x*.25f,0);
             c.transform.SetPositionAndRotation(pivot-rotation*Vector3.forward*distance,rotation);
         }
         public void Zoom(float wheel,Vector2 cursor)
         {
             var c=environment.overview.enabled?environment.overview:environment.follow;
-            Vector3 before=Ground(c,cursor);c.orthographicSize=Mathf.Clamp(c.orthographicSize*Mathf.Exp(-wheel*.15f),.025f,2);
-            if(c==environment.overview){Vector3 shift=before-Ground(c,cursor);c.transform.position+=shift;pivot+=shift;}
+            float oldSize=c.orthographicSize;c.orthographicSize=Mathf.Clamp(oldSize*Mathf.Exp(-wheel*.15f),.025f,2);
+            if(c==environment.overview)
+            {
+                Vector2 offset=cursor-new Vector2(c.pixelRect.center.x,c.pixelRect.center.y);
+                Vector3 shift=(c.transform.right*offset.x+c.transform.up*offset.y)*2*(oldSize-c.orthographicSize)/Mathf.Max(1,c.pixelHeight);
+                c.transform.position+=shift;pivot+=shift;
+            }
         }
         public void ResetView()
         {
@@ -65,6 +73,7 @@ namespace RescueSim
             if(Input.GetKeyDown(KeyCode.F))FocusBoat();
             float scale=Mathf.Max(.6f,Screen.height/900f);Vector3 mouse=Input.mousePosition;
             bool inScene=mouse.x>320*scale&&mouse.x<Screen.width-316*scale&&mouse.y>=0&&mouse.y<=Screen.height;
+            if(environment.dashboard)inScene=environment.dashboard.SceneContains(mouse);
             if(inScene)
             {
                 if(Input.GetMouseButtonDown(0)){drag=0;lastMouse=mouse;}
